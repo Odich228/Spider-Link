@@ -124,6 +124,47 @@ dialog .close:hover{background:var(--red);color:#101016}
 }
 @media(max-width:520px){.catalog-grid.cards{grid-template-columns:minmax(0,1fr)}.catalog-entry .comic-art{height:270px;min-height:270px}.catalog-entry .character{padding:17px}.catalog-entry .character h3{font-size:19px}.catalog-entry .character small{font-size:11px}.catalog-entry .character p{font-size:12px}.catalog-entry .character>.eyebrow{font-size:9px;min-height:20px}.hero-category{font-size:8px}.card-actions button{font-size:10px}.catalog-controls{grid-template-columns:minmax(0,1fr)}.result-alternatives{grid-template-columns:minmax(0,1fr)}.result-alternatives button{display:grid;grid-template-columns:76px minmax(0,1fr);gap:12px;align-items:center}.result-alternatives .comic-art{width:76px;height:100px;margin:0;grid-row:span 2}.passport-summary{grid-template-columns:minmax(0,1fr)}.passport-summary .comic-art,.passport-summary img{width:100%;height:230px}.passport-summary .btn{width:100%;justify-content:center}.profile-tools .btn{flex:1;justify-content:center;min-width:150px}.hero .serial{font-size:7px;letter-spacing:2px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto!important}*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.catalog-entry:hover,.btn:hover{transform:none}}
+
+/* Team navigation and catalog comparisons */
+aside{overflow-y:auto}.sector{margin-top:32px}aside nav{gap:6px}aside nav button{padding:12px}.sidebar-bottom{padding-top:24px}.card-actions .compare-button{flex:0 0 45px;border-left:1px solid var(--line);font-size:20px;color:var(--cyan)}
+@media(max-width:760px){aside{overflow:visible}aside nav button{padding:7px 4px;min-height:49px}aside nav button span{font-size:9px}.sector{display:none}}
+</style>
+  <style>.team-page{max-width:1200px}.team-title{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-top:24px}.team-title h1{margin:0;overflow-wrap:anywhere}.team-status{color:var(--cyan)!important;min-height:22px;margin:18px 0 28px!important;font:11px monospace!important}.team-status.team-error{color:#ffb1bf!important}.team-welcome{display:grid;grid-template-columns:220px 1fr;gap:36px;align-items:center;margin:30px 0}.team-welcome p{color:var(--muted);line-height:1.8}.team-welcome h2{font-size:34px}.team-signal-art{background:radial-gradient(ellipse,#733653,#1a1922 75%);border:1px solid #63334c;padding:12px;text-align:center}.team-art{display:block;max-width:100%;object-fit:contain}.team-signal-art .team-art{width:100%;height:240px}.team-signal-art>span{display:block;margin-top:12px;font:8px monospace;color:var(--cyan)}.team-columns{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin:24px 0;align-items:start}.team-panel{background:var(--panel);border:1px solid var(--line);padding:24px;min-width:0}.team-form{display:grid;gap:18px}.team-form h2{margin:0 0 8px}.team-form input,.team-form textarea{min-width:0}.team-form .btn{justify-content:center;margin-top:4px}.team-form textarea{resize:vertical;min-height:105px}.team-alert{border:1px solid #80575f;background:#4e263144;padding:18px;color:#ffc7d3;line-height:1.7}.team-topbar{display:flex;align-items:center;justify-content:space-between;gap:20px;margin-bottom:24px}.team-topbar>p{max-width:330px;color:var(--muted);line-height:1.7;margin:0}.team-actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center}.team-actions .btn{gap:12px;font-size:11px}.team-invite{border-left:3px solid var(--cyan);background:#a5fbf407;padding:20px;display:flex;gap:20px;align-items:center;justify-content:space-between;margin:20px 0 28px}.team-invite p{font-size:12px;margin:10px 0 0}.team-invite strong{font:15px monospace;letter-spacing:2px;overflow-wrap:anywhere}.team-map{height:var(--team-map-height,500px);position:relative;isolation:isolate;overflow:hidden;border:1px solid #354247;background:radial-gradient(ellipse at center,#31555644,transparent 70%),linear-gradient(#a5fbf408 1px,transparent 1px),linear-gradient(90deg,#a5fbf408 1px,transparent 1px);background-size:auto,25px 25px,25px 25px}.team-map:before{content:'';position:absolute;width:55%;aspect-ratio:1;left:22.5%;top:17%;border:1px dashed #a5fbf42b;border-radius:50%;z-index:-1}.team-lines{position:absolute;inset:0;width:100%;height:100%;stroke:var(--cyan);opacity:.55;pointer-events:none}.team-map-node{position:absolute;transform:translate(-50%,-50%);border:1px solid #606675;background:#151820;color:#f3f2eb;padding:7px;width:94px;box-shadow:0 0 20px #0007}.team-map-node:hover{border-color:var(--cyan);z-index:2}.team-map-node .team-art{height:76px;width:76px;margin:auto;background:#11131b}.team-map-node strong{display:block;font-size:10px;margin-top:7px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.team-map-node small{display:block;font:8px monospace;color:var(--cyan);margin-top:4px}.team-map-node.team-self{border-color:var(--red);box-shadow:3px 3px 0 #ff3b5044}.team-help{font-size:11px;color:var(--muted);line-height:1.75;margin:14px 0 0}.team-panel>.section-title{gap:12px;align-items:start}.team-panel>.section-title h2{font-size:19px}.team-panel .link{line-height:1.5;text-align:left}.team-rally{padding:20px 0;border-top:1px solid var(--line)}.team-rally:first-of-type{padding-top:6px;border-top:0}.team-rally h3{margin:12px 0 8px}.team-rally>p,.team-mission>p{color:#afa9b9;font-size:12px;line-height:1.7;white-space:pre-wrap;overflow-wrap:anywhere}.team-rsvp{display:flex;flex-wrap:wrap;gap:7px;margin-top:16px}.team-rsvp button{border:1px solid #424554;background:#20222c;color:#c4c6d1;padding:9px 11px;font-size:10px}.team-rsvp button[aria-pressed=true]{border-color:var(--cyan);color:var(--cyan);background:#a5fbf414}.team-rsvp b{font:10px monospace;margin-left:5px}.team-rally details{margin-top:14px;color:var(--muted);font-size:10px;line-height:1.8}.team-rally summary{cursor:pointer;color:var(--cyan)}.team-rally ul{padding-left:17px;overflow-wrap:anywhere}.team-missions{display:grid;gap:14px}.team-mission{background:#10101666;border:1px solid #383845;padding:18px}.team-mission h3{margin:12px 0 9px;overflow-wrap:anywhere}.team-mission .team-actions{margin-top:16px}.team-mission .btn{font-size:10px;padding:11px}.team-issues{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.team-issues>.empty{grid-column:1/-1}.team-issue{position:relative;background:#eeeadc;border:5px solid #eeeadc;color:#17151f;box-shadow:5px 5px 0 #ff3b5066;overflow:hidden}.team-issue-number{position:absolute;top:8px;left:8px;font:10px monospace;color:#111;background:var(--cyan);padding:6px;z-index:1}.team-issue-art{height:220px;background:#15131f}.team-issue-art>.team-art{height:100%;width:100%}.team-issue-art .team-photo{margin:0;height:100%}.team-issue-art .team-photo img{height:100%;width:100%;object-fit:cover}.team-issue-art figcaption{display:none}.team-issue-copy{padding:16px 12px 12px}.team-issue-copy small{font:9px monospace;color:#695865}.team-issue-copy h3{margin:10px 0;font-family:'Russo One',sans-serif;font-size:20px;overflow-wrap:anywhere}.team-issue-copy p{font-size:11px;line-height:1.65;white-space:pre-wrap;overflow-wrap:anywhere}.team-issue-copy .link{color:#7e253c}.team-photo{margin:20px 0;background:#11131b}.team-photo img{display:block;max-width:100%;width:100%;min-height:100px;object-fit:contain;color:#bbb;font-size:11px}.team-photo figcaption{font-size:11px;color:#ccc;padding:12px;line-height:1.6;white-space:pre-wrap;overflow-wrap:anywhere}.team-photo figcaption:empty{display:none}.team-settings{margin-top:36px;border-top:1px solid var(--line);padding-top:25px}.team-settings h2{font-size:17px}.team-settings>.link{margin-top:22px}.team-issue-detail h2{margin-top:20px;overflow-wrap:anywhere}.team-report-text{white-space:pre-wrap;line-height:1.85;font-size:13px;overflow-wrap:anywhere}.team-member-detail>.team-art{height:250px;width:100%;margin-bottom:20px;background:#12121a}.team-member-detail h2{margin:16px 0 12px;overflow-wrap:anywhere}.team-member-detail>p{line-height:1.7;color:#bcb5c6}.team-member-detail blockquote{border-left:2px solid var(--red);padding-left:14px;margin:20px 0;font-size:13px;line-height:1.7}.team-member-detail h3{margin-top:25px}.team-history-item{display:block;width:100%;text-align:left;border:1px solid var(--line);background:#11131b;color:var(--cyan);padding:13px;margin:8px 0}.team-history-item small{display:block;color:var(--muted);margin-top:7px;line-height:1.6}.team-form #team-report-previews{display:grid;gap:15px}.team-form #team-report-previews:empty{display:none}.team-page button:disabled,.team-form button:disabled{cursor:default;opacity:.45;transform:none}.team-page [hidden]{display:none!important}@media(max-width:1100px){.team-topbar{display:block}.team-topbar .team-actions{margin-top:18px}.team-map-node{width:84px;padding:6px}.team-map-node .team-art{width:66px;height:66px}.team-issues{grid-template-columns:1fr 1fr}.team-panel{padding:20px}}@media(max-width:760px){.team-title{align-items:start}.team-title h1{font-size:32px}.team-title>.link{flex-shrink:0}.team-welcome{grid-template-columns:110px 1fr;gap:18px}.team-welcome h2{font-size:23px}.team-welcome p{font-size:11px}.team-welcome .notice{grid-column:1/-1}.team-signal-art{padding:7px}.team-signal-art .team-art{height:155px}.team-signal-art>span{font-size:6px;letter-spacing:0;line-height:1.6}.team-columns{grid-template-columns:1fr;gap:20px}.team-invite{display:block;padding:17px}.team-invite .btn{margin-top:16px;font-size:10px}.team-panel{padding:17px}.team-map{height:530px;margin:0 -8px}.team-map-node{width:72px;padding:5px}.team-map-node .team-art{width:56px;height:56px}.team-map-node strong{font-size:9px}.team-map-node small{font-size:7px}.team-issues{gap:16px;grid-template-columns:1fr}.team-issue-art{height:270px}.team-actions .btn{font-size:10px}.team-rsvp button{padding:10px}.team-status{line-height:1.7!important}.team-topbar>p{font-size:12px}.team-settings .team-actions{gap:16px;align-items:start;flex-direction:column}}@media(prefers-reduced-motion:reduce){.team-page *{scroll-behavior:auto!important}}
+</style>
+  <style>.sona-layout{display:grid;grid-template-columns:minmax(260px,.85fr) minmax(0,1.15fr);gap:34px;align-items:start;margin-top:30px}
+.sona-preview{position:sticky;top:24px;padding:22px;background:linear-gradient(145deg,#2d2032,#17171f);border:1px solid #59364b}
+.sona-preview-frame{border:1px solid #484052;background:#101016;margin-bottom:22px;overflow:hidden}
+.sona-preview img{display:block;width:100%;max-height:540px;aspect-ratio:500/620;object-fit:contain}
+.sona-preview h2{font:28px/1.2 'Russo One',Arial,sans-serif;margin:13px 0 10px;overflow-wrap:anywhere}
+.sona-preview p{font-size:12px;line-height:1.7;color:#bbb1c4}
+.sona-preview .sona-status{font:9px/1.7 monospace;letter-spacing:.5px;color:var(--cyan);margin:17px 0 0;border-top:1px solid var(--line);padding-top:15px}
+.sona-form{display:grid;grid-template-columns:1fr 1fr;gap:19px;padding:24px;border:1px solid var(--line);background:#19191f}
+.sona-form>label{font-size:11px;color:#b4adbf}
+.sona-wide{grid-column:1/-1}
+.sona-colors{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;border:1px solid #42404e;padding:17px;margin:0}
+.sona-colors legend{font-size:11px;letter-spacing:.4px;color:var(--cyan);padding:0 7px}
+.sona-colors input[type=color]{padding:5px;width:100%;height:52px;cursor:pointer;background:#111118}
+.sona-actions{display:flex;flex-wrap:wrap;gap:13px;align-items:center}
+.sona-actions .btn{font-size:11px;line-height:1.5;justify-content:center;gap:10px}
+.sona-form .notice{margin:0!important;line-height:1.8}
+.compare-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:25px;margin-top:30px}
+.compare-column{min-width:0;padding:24px;border:1px solid var(--line);background:linear-gradient(145deg,#211d29,#17171f)}
+.compare-column:nth-child(2){border-top-color:var(--cyan)}
+.compare-column:first-child{border-top-color:var(--red)}
+.compare-column>label{margin-top:18px}
+.compare-column select{font-size:12px;min-width:0;max-width:100%}
+.compare-panel{margin-top:25px;border-top:1px solid #3b3345;padding-top:23px}
+.compare-art{display:block;width:100%;height:340px;object-fit:contain;border:1px solid #3b3345;background:radial-gradient(ellipse,#302335,#101016 75%);padding:12px;margin-bottom:18px}
+.compare-panel h2{font:27px/1.25 'Russo One',Arial,sans-serif;letter-spacing:-.5px;margin:16px 0 9px;overflow-wrap:anywhere}
+.compare-alias{color:var(--cyan);font-size:11px;line-height:1.8;margin-bottom:22px}
+.compare-facts{margin:0;display:grid;gap:0}
+.compare-facts dt{border-top:1px solid #383340;padding-top:16px;color:#ada0bb;font:9px monospace;letter-spacing:1px;text-transform:uppercase}
+.compare-facts dd{margin:8px 0 18px;color:#ddd7e5;font-size:12px;line-height:1.8}
+.compare-panel .art-source{padding:10px 0;color:var(--cyan);font-size:11px;line-height:1.8}
+@media(max-width:1100px){.sona-layout{grid-template-columns:minmax(230px,.8fr) minmax(0,1.2fr);gap:24px}.sona-form{padding:20px;gap:16px}.sona-colors{gap:10px;padding:14px}.compare-grid{gap:18px}.compare-column{padding:20px}.compare-panel h2{font-size:24px}}
+@media(max-width:900px){.sona-layout{grid-template-columns:minmax(0,1fr)}.sona-preview{position:static;display:grid;grid-template-columns:minmax(160px,.8fr) 1fr;gap:0 23px}.sona-preview-frame{grid-row:span 5;margin:0}.sona-preview h2{font-size:23px;margin-top:8px}.sona-preview> .eyebrow{align-self:end;line-height:1.8}.sona-preview .sona-status{margin-top:10px;padding-top:10px}.sona-form{grid-template-columns:1fr 1fr}.compare-grid{gap:15px}.compare-art{height:290px}.compare-column{padding:16px}.compare-panel h2{font-size:22px}}
+@media(max-width:600px){.sona-layout{margin-top:23px;gap:20px}.sona-preview{display:block;padding:18px}.sona-preview-frame{max-width:340px;margin:0 auto 20px}.sona-preview h2{font-size:25px}.sona-form{padding:18px;grid-template-columns:minmax(0,1fr);gap:17px}.sona-wide{grid-column:auto}.sona-colors{gap:10px;padding:14px}.sona-actions{align-items:stretch;gap:11px}.sona-actions .btn{width:100%}.sona-actions .link{width:100%;text-align:center}.compare-grid{grid-template-columns:minmax(0,1fr);gap:22px}.compare-column{padding:20px}.compare-art{height:310px}.compare-panel h2{font-size:25px}.compare-facts dd{font-size:12px}.compare-column select{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.sona-preview img{transition:none}}
 </style>
 </head>
 <body>
@@ -132,12 +173,15 @@ dialog .close:hover{background:var(--red);color:#101016}
     <a class="brand" href="#">✳<span>SPIDER<span class="red">—</span>LINK<small>MULTIVERSE CONNECTION SYSTEM</small></span></a>
     <div class="sector">НАВИГАЦИЯ / 01</div>
     <nav aria-label="Разделы штаба">
-      <button data-view="hq" class="active">⌘ <span>Общий штаб</span><i>01</i></button>
-      <button data-view="catalog">◉ <span>Каталог пауков</span><i>02</i></button>
-      <button data-view="quiz">◈ <span>Кто ты из пауков?</span><i>03</i></button>
-      <button data-view="passport">▧ <span>Паспорт паука</span><i>04</i></button>
-      <button data-view="missions">⚡ <span>Миссии</span><i>05</i></button>
-      <button data-view="cover">▱ <span>Моя обложка</span><i>06</i></button>
+      <button data-view="hq" class="active">⌘ <span>Главная</span><i>01</i></button>
+      <button data-view="team">⌘ <span>Штаб команды</span><i>02</i></button>
+      <button data-view="catalog">◉ <span>Каталог пауков</span><i>03</i></button>
+      <button data-view="quiz">◈ <span>Кто ты из пауков?</span><i>04</i></button>
+      <button data-view="passport">▧ <span>Паспорт паука</span><i>05</i></button>
+      <button data-view="missions">⚡ <span>Миссии</span><i>06</i></button>
+      <button data-view="cover">▱ <span>Моя обложка</span><i>07</i></button>
+      <button data-view="sona">✳ <span>Мой Spider-Sona</span><i>08</i></button>
+      <button data-view="compare">⇄ <span>Сравнить пауков</span><i>09</i></button>
     </nav>
     <div class="sidebar-bottom">
       <span class="signal">● СИГНАЛ СТАБИЛЕН</span>
@@ -225,15 +269,19 @@ function heroArt(i=state.hero){const h=heroes[i];return `<img class="comic-art" 
 function save(){state.heroId=heroes[state.hero].id;try{localStorage.setItem('spider-link-v1',JSON.stringify(state))}catch{toast('Не удалось сохранить: проверь свободное место и настройки браузера.')}updateTop()}
 function toast(t){$('#toast').textContent=t;$('#toast').style.display='block';clearTimeout(toastTimer);toastTimer=setTimeout(()=>$('#toast').style.display='none',4500)}
 function event(t){state.events.unshift({text:t,date:new Date().toLocaleDateString('ru-RU')});state.events=state.events.slice(0,12);save()}
-function updateTop(){$('#topName').textContent=state.name||'Новый паук';$('#topEarth').textContent=state.earth||'?'}
+function activeProfile(){
+  if(window.SpiderExtras?.heroForProfile){const p=window.SpiderExtras.heroForProfile();return {...p,name:p.active?p.name:(p.displayName||state.name||p.name)};}
+  const h=heroes[state.hero];return {...h,name:state.name||h.name,earth:state.earth||h.earth,power:state.power||h.power,motto:state.motto,active:false};
+}
+function updateTop(){const profile=activeProfile();$('#topName').textContent=profile.name||'Новый паук';$('#topEarth').textContent=profile.earth||'?'}
 function capturePassportDraft(){if(view!=='passport')return;const form=$('#passportForm');if(!form)return;const data=new FormData(form);for(const key of ['name','earth','power','motto','status'])state[key]=String(data.get(key)||'').trim();}
 function go(v){if(view==='passport'&&v!==view){capturePassportDraft();save();}view=v;document.querySelectorAll('aside nav button').forEach(b=>{b.classList.toggle('active',b.dataset.view===v);if(b.dataset.view===v)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});render();window.scrollTo({top:0,behavior:'smooth'})}
 function missionCard(m,i){const done=state.done.includes(i),active=state.active.includes(i);return `<article class="mission ${done?'done':''}"><span class="tag">${m.icon} ${m.tag} / 0${i+1}</span><h3>${m.title}</h3><p>${m.desc}</p><div class="mission-bottom"><span>✧ ${m.reward}</span><button class="link" data-mission="${i}">${done?'Итоги ↗':active?'Завершить ↗':'Принять →'}</button></div></article>`}
-function hq(){return `<div class="intro"><div><h2>Твой штаб. Твои правила.</h2><p>С возвращением в мультивселенную${state.name?', '+esc(state.name):''}.</p></div><span class="pill">◉ ЛИЧНЫЙ РЕЖИМ</span></div><section class="hero"><div class="hero-copy"><span class="eyebrow">ТВОЯ ИСТОРИЯ НАЧИНАЕТСЯ ЗДЕСЬ</span><h1>ОДНА МАСКА.<br>МИЛЛИОН<br><em>ВОЗМОЖНОСТЕЙ.</em></h1><p>Найди своего паука. Собери свою историю.<br>Каждая вселенная начинается с тебя.</p><div class="hero-actions"><button class="btn" data-view="quiz">Найти своего паука <span>↗</span></button><button class="btn secondary" data-view="catalog">Все пауки · ${heroes.length} ↗</button></div></div><div class="hero-art"><div class="portal"></div>${mask()}<span class="art-label">WHAT'S UP, DANGER?</span></div><span class="serial">DIMENSIONAL GATEWAY / EARTH-${esc(state.earth)}</span></section><div class="stats"><div class="stat"><b>${state.name?'01':'00'}</b><span>ГЕРОЕВ<br>В ЛИЧНОМ ШТАБЕ</span></div><div class="stat"><b>0${state.active.length}</b><span>АКТИВНЫХ<br>МИССИЙ</span></div><div class="stat"><b>0${state.done.length}</b><span>ТРОФЕЕВ<br>В КОЛЛЕКЦИИ</span></div></div><div class="grid"><section><div class="section-title"><h2>Твоя вселенная</h2><button class="link" data-action="team">${esc(state.team)} ↗</button></div><div class="map"><button class="node" data-view="passport"><span style="color:var(--red);font-size:28px">◢◣</span><strong>${esc(state.name||'ТВОЙ СИГНАЛ')}</strong><small>EARTH-${esc(state.earth)} / ${esc(state.status)}</small></button><span class="map-note">${state.name?'01 СИГНАЛ ОБНАРУЖЕН':'ОЖИДАНИЕ ИДЕНТИФИКАЦИИ'}</span></div><p class="notice">Сейчас это личный штаб: профиль и миссии сохраняются в этом браузере. Совместные комнаты и приглашения появятся после подключения сервера.</p></section><section><div class="section-title"><h2>Пора на вылазку</h2><button class="link" data-view="missions">Все миссии ↗</button></div>${missionCard(missions[state.active[0]??0],state.active[0]??0)}</section></div><section style="margin-top:28px"><div class="section-title"><h2>Хроники штаба</h2><span class="eyebrow">LIVE FEED</span></div>${state.events.length?state.events.slice(0,4).map(e=>`<div class="empty" style="margin-top:8px;padding:14px"><span class="red">${esc(e.date)} / </span>${esc(e.text)}</div>`).join(''):'<div class="empty">● Канал открыт. Создай паспорт — и здесь появится первая запись твоей истории.</div>'}</section>`}
+function hq(){return `<div class="intro"><div><h2>Твой штаб. Твои правила.</h2><p>С возвращением в мультивселенную${state.name?', '+esc(state.name):''}.</p></div><span class="pill">◉ ЛИЧНЫЙ РЕЖИМ</span></div><section class="hero"><div class="hero-copy"><span class="eyebrow">ТВОЯ ИСТОРИЯ НАЧИНАЕТСЯ ЗДЕСЬ</span><h1>ОДНА МАСКА.<br>МИЛЛИОН<br><em>ВОЗМОЖНОСТЕЙ.</em></h1><p>Найди своего паука. Собери свою историю.<br>Каждая вселенная начинается с тебя.</p><div class="hero-actions"><button class="btn" data-view="quiz">Найти своего паука <span>↗</span></button><button class="btn secondary" data-view="team">Собрать свою команду ↗</button><button class="link" data-view="catalog">Все пауки · ${heroes.length} ↗</button></div></div><div class="hero-art"><div class="portal"></div>${mask()}<span class="art-label">WHAT'S UP, DANGER?</span></div><span class="serial">DIMENSIONAL GATEWAY / EARTH-${esc(state.earth)}</span></section><div class="stats"><div class="stat"><b>${state.name?'01':'00'}</b><span>ГЕРОЕВ<br>В ЛИЧНОМ ШТАБЕ</span></div><div class="stat"><b>0${state.active.length}</b><span>АКТИВНЫХ<br>МИССИЙ</span></div><div class="stat"><b>0${state.done.length}</b><span>ТРОФЕЕВ<br>В КОЛЛЕКЦИИ</span></div></div><div class="grid"><section><div class="section-title"><h2>Твоя вселенная</h2><button class="link" data-view="team">Открыть общий штаб ↗</button></div><div class="map"><button class="node" data-view="passport"><span style="color:var(--red);font-size:28px">◢◣</span><strong>${esc(state.name||'ТВОЙ СИГНАЛ')}</strong><small>EARTH-${esc(state.earth)} / ${esc(state.status)}</small></button><span class="map-note">${state.name?'01 СИГНАЛ ОБНАРУЖЕН':'ОЖИДАНИЕ ИДЕНТИФИКАЦИИ'}</span></div><p class="notice">Это твой личный сигнал. В общем штабе можно пригласить друзей, объявить сбор и сохранить совместные приключения.</p></section><section><div class="section-title"><h2>Пора на вылазку</h2><button class="link" data-view="missions">Все миссии ↗</button></div>${missionCard(missions[state.active[0]??0],state.active[0]??0)}</section></div><section style="margin-top:28px"><div class="section-title"><h2>Хроники штаба</h2><span class="eyebrow">LIVE FEED</span></div>${state.events.length?state.events.slice(0,4).map(e=>`<div class="empty" style="margin-top:8px;padding:14px"><span class="red">${esc(e.date)} / </span>${esc(e.text)}</div>`).join(''):'<div class="empty">● Канал открыт. Создай паспорт — и здесь появится первая запись твоей истории.</div>'}</section>`}
 function quiz(){if(step>=questions.length){const idx=recommendHero(answers);return `<section class="page"><span class="eyebrow">СИГНАЛ РАСПОЗНАН</span><h1 style="margin-top:22px">Твой паук —<br><span class="red">${heroes[idx].name}</span></h1><p>${heroes[idx].trait}</p><p>Ближайший образ по твоим ответам среди ${heroes.length} героев. Это игровой тест — персонажа всегда можно изменить.</p><div class="hero-art" style="max-width:380px"><div class="portal"></div>${heroArt(idx)}</div><button class="btn" data-result="${idx}">Принять сигнал →</button> <button class="btn secondary" data-action="restart">Пройти ещё раз</button></section>`}return `<section class="page"><span class="eyebrow">ТЕСТ / ИДЕНТИФИКАЦИЯ ПАУКА</span><h1 style="margin-top:22px">Кто под маской?</h1><p>Семь вопросов, ${heroes.length} возможных героев. Выбирай то, что ближе тебе.</p><div class="quizbox"><span class="question-num">ВОПРОС 0${step+1} / 07</span><div class="progress"><div style="width:${step/7*100}%"></div></div><h2>${questions[step][0]}</h2><div class="answers">${questions[step][1].map((a,i)=>`<button data-answer="${i}"><span class="red">0${i+1} / </span>${a}</button>`).join('')}</div>${step?'<button class="link" style="margin-top:20px" data-action="back">← Предыдущий вопрос</button>':''}</div></section>`}
 function characterCard(i) {
   const h=heroes[i], favorite=state.favorites.includes(h.id);
-  return `<article class="catalog-entry" data-index="${i}"><button class="character ${i===state.hero?'selected':''}" data-hero="${i}" aria-label="Выбрать: ${esc(h.name)}"><span class="eyebrow" style="color:${h.color}">EARTH-${esc(h.earth||'?')}${i===state.hero?' / ВЫБРАН':''}</span>${heroArt(i)}<h3>${esc(h.name)}</h3><small>${esc(h.alias)}</small><span class="hero-category">${esc(groups[h.group]||'Паучья вселенная')}</span></button><div class="card-actions"><button class="favorite-button" data-favorite="${i}" aria-pressed="${favorite}" aria-label="${favorite?'Убрать из избранного':'В избранное'}: ${esc(h.name)}">${favorite?'★':'☆'}</button><button class="details-button" data-details="${i}">Досье ↗</button></div></article>`;
+  return `<article class="catalog-entry" data-index="${i}"><button class="character ${i===state.hero?'selected':''}" data-hero="${i}" aria-label="Выбрать: ${esc(h.name)}"><span class="eyebrow" style="color:${h.color}">EARTH-${esc(h.earth||'?')}${i===state.hero?' / ВЫБРАН':''}</span>${heroArt(i)}<h3>${esc(h.name)}</h3><small>${esc(h.alias)}</small><span class="hero-category">${esc(groups[h.group]||'Паучья вселенная')}</span></button><div class="card-actions"><button class="favorite-button" data-favorite="${i}" aria-pressed="${favorite}" aria-label="${favorite?'Убрать из избранного':'В избранное'}: ${esc(h.name)}">${favorite?'★':'☆'}</button><button class="details-button" data-details="${i}">Досье ↗</button><button class="compare-button" data-compare="${i}" aria-label="Сравнить: ${esc(h.name)}">⇄</button></div></article>`;
 }
 function catalog() {
   const universes=[...new Set(heroes.map(h=>h.earth).filter(Boolean))].sort((a,b)=>a.localeCompare(b,undefined,{numeric:true}));
@@ -242,37 +290,50 @@ function catalog() {
 function heroDetail(i) {
   const h=heroes[i];
   if(!h) return;
-  modal(`<div class="hero-detail"><div class="detail-art">${heroArt(i)}</div><div class="detail-copy"><span class="eyebrow">ЛИЧНОЕ ДЕЛО / ${esc(h.id.toUpperCase())}</span><h2>${esc(h.name)}</h2><p class="red">${esc(h.alias)}</p><dl class="detail-facts"><dt>Вселенная</dt><dd>${h.earth?'Earth-'+esc(h.earth):'Не подтверждена'}</dd><dt>Особенности</dt><dd>${esc(h.power)}</dd><dt>История</dt><dd>${esc(h.trait)}</dd>${h.firstAppearance?`<dt>Первое появление</dt><dd>${esc(h.firstAppearance)}</dd>`:''}</dl><button class="btn" data-hero="${i}">Выбрать этого героя →</button><div class="detail-sources"><a class="art-source" href="${esc(h.source)}" target="_blank" rel="noopener noreferrer">Источник ↗</a>${h.imageSource&&h.imageSource!==h.source?`<a class="art-source" href="${esc(h.imageSource)}" target="_blank" rel="noopener noreferrer">Комиксное изображение ↗</a>`:''}</div><small class="muted">${esc(h.credit||'Marvel Comics · фанатский каталог')}</small></div></div>`);
+  modal(`<div class="hero-detail"><div class="detail-art">${heroArt(i)}</div><div class="detail-copy"><span class="eyebrow">ЛИЧНОЕ ДЕЛО / ${esc(h.id.toUpperCase())}</span><h2>${esc(h.name)}</h2><p class="red">${esc(h.alias)}</p><dl class="detail-facts"><dt>Вселенная</dt><dd>${h.earth?'Earth-'+esc(h.earth):'Не подтверждена'}</dd><dt>Особенности</dt><dd>${esc(h.power)}</dd><dt>История</dt><dd>${esc(h.trait)}</dd>${h.firstAppearance?`<dt>Первое появление</dt><dd>${esc(h.firstAppearance)}</dd>`:''}</dl><button class="btn" data-hero="${i}">Выбрать этого героя →</button><button class="btn secondary" data-compare="${i}">Сравнить с другим героем ⇄</button><div class="detail-sources"><a class="art-source" href="${esc(h.source)}" target="_blank" rel="noopener noreferrer">Источник ↗</a>${h.imageSource&&h.imageSource!==h.source?`<a class="art-source" href="${esc(h.imageSource)}" target="_blank" rel="noopener noreferrer">Комиксное изображение ↗</a>`:''}</div><small class="muted">${esc(h.credit||'Marvel Comics · фанатский каталог')}</small></div></div>`);
 }
 function passport() {
   const h=heroes[state.hero];
-  return `<section class="page"><span class="eyebrow">ПАУЧИЙ ПАСПОРТ / ЛИЧНОЕ ДЕЛО</span><h1 style="margin-top:22px">Под маской — ты.</h1><p>Выбери героя и добавь то, что делает твою версию особенной.</p><div class="passport-summary">${heroArt()}<div><span class="eyebrow">ТВОЙ ПАУК / EARTH-${esc(h.earth||'?')}</span><h2>${esc(h.name)}</h2><p>${esc(h.alias)}</p><p>${esc(h.trait)}</p><button class="btn secondary" data-view="catalog">Сменить героя · ${heroes.length} в каталоге ↗</button> <button class="link" data-details="${state.hero}">Досье ↗</button></div></div><form id="passportForm" class="form"><label>Имя героя<input name="name" maxlength="32" required value="${esc(state.name)}" placeholder="Как тебя звать в мультивселенной?"></label><label>Номер вселенной<input name="earth" maxlength="12" pattern="[A-Za-z0-9 -]+" required value="${esc(state.earth)}" placeholder="Номер твоей вселенной"></label><label>Суперспособность<input name="power" maxlength="80" value="${esc(state.power)}" required></label><label>Статус<select name="status">${['На связи','Спасаю город','Отдыхаю после миссии'].map(s=>`<option ${s===state.status?'selected':''}>${s}</option>`).join('')}</select></label><label class="wide">Фраза героя<input name="motto" maxlength="90" value="${esc(state.motto)}"></label><button class="btn" type="submit">Сохранить паспорт ↗</button></form><h2>Твои трофеи</h2><div class="trophies">${state.done.length?state.done.map(i=>`<span class="trophy">${missions[i].icon} ${missions[i].reward}</span>`).join(''):'<span class="muted">Первый трофей ждёт тебя в миссиях.</span>'}</div><div class="profile-tools"><button class="btn secondary" data-action="exportProfile">Сохранить копию профиля ↓</button><label class="btn secondary">Загрузить копию профиля<input id="importProfile" type="file" accept="application/json,.json" hidden></label></div><p class="notice">Копия сохраняет паспорт, избранное, миссии и трофеи. Её можно перенести в другой браузер. Совместный штаб пока не подключён.</p></section>`;
+  return `<section class="page"><span class="eyebrow">ПАУЧИЙ ПАСПОРТ / ЛИЧНОЕ ДЕЛО</span><h1 style="margin-top:22px">Под маской — ты.</h1><p>Выбери героя и добавь то, что делает твою версию особенной.</p><div class="profile-tools"><button class="btn secondary" data-view="sona">Создать своего паука ✳</button><button class="btn secondary" data-view="team">Моя команда ↗</button>${activeProfile().active?'<span class="notice">На обложке и в профиле команды используется твой Spider-Sona.</span>':''}</div><div class="passport-summary">${heroArt()}<div><span class="eyebrow">ТВОЙ ПАУК / EARTH-${esc(h.earth||'?')}</span><h2>${esc(h.name)}</h2><p>${esc(h.alias)}</p><p>${esc(h.trait)}</p><button class="btn secondary" data-view="catalog">Сменить героя · ${heroes.length} в каталоге ↗</button> <button class="link" data-details="${state.hero}">Досье ↗</button></div></div><form id="passportForm" class="form"><label>Имя героя<input name="name" maxlength="32" required value="${esc(state.name)}" placeholder="Как тебя звать в мультивселенной?"></label><label>Номер вселенной<input name="earth" maxlength="12" pattern="[A-Za-z0-9 -]+" required value="${esc(state.earth)}" placeholder="Номер твоей вселенной"></label><label>Суперспособность<input name="power" maxlength="80" value="${esc(state.power)}" required></label><label>Статус<select name="status">${['На связи','Спасаю город','Отдыхаю после миссии'].map(s=>`<option ${s===state.status?'selected':''}>${s}</option>`).join('')}</select></label><label class="wide">Фраза героя<input name="motto" maxlength="90" value="${esc(state.motto)}"></label><button class="btn" type="submit">Сохранить паспорт ↗</button></form><h2>Твои трофеи</h2><div class="trophies">${state.done.length?state.done.map(i=>`<span class="trophy">${missions[i].icon} ${missions[i].reward}</span>`).join(''):'<span class="muted">Первый трофей ждёт тебя в миссиях.</span>'}</div><div class="profile-tools"><button class="btn secondary" data-action="exportProfile">Сохранить копию профиля ↓</button><label class="btn secondary">Загрузить копию профиля<input id="importProfile" type="file" accept="application/json,.json" hidden></label></div><p class="notice">Копия сохраняет паспорт, избранное, миссии и трофеи. Её можно перенести в другой браузер. Вход в команду сохраняется отдельно на этом устройстве. Копия профиля не содержит ключ доступа к комнате.</p></section>`;
 }
 function selectHero(i) {
   if(!Number.isInteger(i)||!heroes[i]) return;
   const form=view==='passport'?$('#passportForm'):null;
   if(form) {const data=new FormData(form);for(const key of ['name','motto','status']) state[key]=String(data.get(key)||'');}
-  state.hero=i;state.heroId=heroes[i].id;state.earth=heroes[i].earth;state.power=heroes[i].power;
+  window.SpiderExtras?.deactivatePersona?.();state.hero=i;state.heroId=heroes[i].id;state.earth=heroes[i].earth;state.power=heroes[i].power;
   save(); if($('#modal').open) $('#modal').close(); go('passport'); toast('Герой выбран: '+heroes[i].name);
 }
 function exportProfile() {
   capturePassportDraft(); save();
-  const blob=new Blob([JSON.stringify({app:'SPIDER-LINK',version:1,profile:state},null,2)],{type:'application/json'});
+  const blob=new Blob([JSON.stringify({app:'SPIDER-LINK',version:1,profile:state,sona:window.SpiderExtras?.persona?.()||null},null,2)],{type:'application/json'});
   const url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='spider-link-profile.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
   toast('Копия профиля готова');
 }
 
-function missionPage(){return `<section class="page"><span class="eyebrow">ДОСКА ЗАДАНИЙ / ВЫХОД В ГОРОД</span><h1 style="margin-top:22px">Маленькие миссии.<br>Большие истории.</h1><p>Выполняйте задания с друзьями, а здесь сохраняй свои итоги и собирай трофеи.</p><div class="mission-grid">${missions.map(missionCard).join('')}</div><p class="notice">Отметки и заметки видны только в твоём браузере. Общего прогресса между устройствами пока нет.</p></section>`}
-function coverPage(){return `<section class="page"><span class="eyebrow">ТВОЙ ПЕРВЫЙ ВЫПУСК</span><h1 style="margin-top:22px">Ты на обложке.</h1><div class="cover-layout"><div class="cover"><small>SPIDER-LINK PRESENTS / ISSUE 001</small><h2>YOUR FRIENDLY<br>MULTIVERSE</h2>${heroArt()}<strong>${esc(state.name||'НОВЫЙ ПАУК')}</strong><small>EARTH-${esc(state.earth)} · ${esc(heroes[state.hero].name)}</small><small style="text-align:center">${esc(state.motto)}</small></div><div><h2>Каждому герою —<br>своя история.</h2><p>Паспорт становится обложкой комикса. Сохрани её как картинку и покажи друзьям.</p><button class="btn" data-action="download">Скачать обложку PNG ↓</button><br><br><button class="btn secondary" data-view="passport">Изменить паспорт ↗</button><p class="notice">Для личного использования. Фанатский проект по мотивам Spider-Verse.</p></div></div></section>`}
-function render(){$('#content').innerHTML=`<div class="reveal">${({hq,quiz,passport,catalog,missions:missionPage,cover:coverPage}[view]||hq)()}</div>`;updateTop();if(view==='catalog')filterCatalog()}
+function missionPage(){return `<section class="page"><span class="eyebrow">ДОСКА ЗАДАНИЙ / ВЫХОД В ГОРОД</span><h1 style="margin-top:22px">Маленькие миссии.<br>Большие истории.</h1><p>Выполняйте задания с друзьями, а здесь сохраняй свои итоги и собирай трофеи.</p><div class="mission-grid">${missions.map(missionCard).join('')}</div><p class="notice">Здесь хранятся личные итоги. Совместные задания, фотографии и выпуски комикса находятся в штабе команды.</p></section>`}
+function coverPage(){
+  const p=activeProfile(),label=p.active?'Spider-Sona':heroes[state.hero].name;
+  return `<section class="page"><span class="eyebrow">ТВОЙ ПЕРВЫЙ ВЫПУСК</span><h1 style="margin-top:22px">Ты на обложке.</h1><div class="cover-layout"><div class="cover"><small>SPIDER-LINK PRESENTS / ISSUE 001</small><h2>YOUR FRIENDLY<br>MULTIVERSE</h2><img class="comic-art" src="${esc(p.image)}" alt="${esc(label)}"><strong>${esc(p.name||'НОВЫЙ ПАУК')}</strong><small>EARTH-${esc(p.earth)} · ${esc(label)}</small><small style="text-align:center">${esc(p.motto)}</small></div><div><h2>Каждому герою —<br>своя история.</h2><p>Сохрани личную обложку или собери общий постер команды в штабе.</p><button class="btn" data-action="download">Скачать обложку PNG ↓</button><br><br><button class="btn secondary" data-view="passport">Изменить паспорт ↗</button> <button class="btn secondary" data-view="team">Постер команды ↗</button><p class="notice">Фанатский проект для личного использования.</p></div></div></section>`;
+}
+function render(){$('#content').innerHTML=`<div class="reveal">${({hq,quiz,passport,catalog,missions:missionPage,cover:coverPage,team:()=>window.SpiderTeam?.render()||'<p>Штаб загружается…</p>',sona:()=>window.SpiderExtras?.renderSona()||'<p>Редактор загружается…</p>',compare:()=>window.SpiderExtras?.renderCompare()||'<p>Сравнение загружается…</p>'}[view]||hq)()}</div>`;updateTop();if(view==='catalog')filterCatalog();window.SpiderTeam?.onView?.(view);window.SpiderExtras?.onView?.(view)}
 function modal(html){$('#modalContent').innerHTML=html;$('#modal').showModal()}
-async function download(){const c=document.createElement('canvas');c.width=900;c.height=1200;const g=c.getContext('2d');g.fillStyle='#eee3ce';g.fillRect(0,0,900,1200);const grad=g.createLinearGradient(0,0,900,1200);grad.addColorStop(0,'#5e2b52');grad.addColorStop(1,'#101522');g.fillStyle=grad;g.fillRect(18,18,864,1164);g.strokeStyle='#ff3b5030';for(let i=0;i<40;i++){g.beginPath();g.moveTo(450,730);g.lineTo(450+1500*Math.cos(i),730+1500*Math.sin(i));g.stroke()}g.textAlign='center';g.fillStyle='#eee3ce';g.font='18px sans-serif';g.fillText('SPIDER-LINK PRESENTS / ISSUE 001',450,75);g.fillStyle='#ff3b50';g.font='bold 76px sans-serif';g.fillText('YOUR FRIENDLY',450,190);g.fillText('MULTIVERSE',450,275);g.save();g.translate(450,610);g.rotate(-.12);g.fillStyle='#171321';g.strokeStyle='#ff3b50';g.lineWidth=6;g.beginPath();g.ellipse(0,0,173,230,0,0,7);g.fill();g.stroke();g.lineWidth=2;for(let y=-160;y<190;y+=45){g.beginPath();g.ellipse(0,y,160-Math.abs(y)*.18,45,0,0,7);g.stroke()}for(let x=-130;x<=130;x+=65){g.beginPath();g.moveTo(x,-190);g.lineTo(-x,190);g.stroke()}g.fillStyle='#f8f2df';g.strokeStyle='#060812';g.lineWidth=12;[-1,1].forEach(d=>{g.beginPath();g.moveTo(d*140,-65);g.lineTo(d*20,5);g.quadraticCurveTo(d*100,90,d*140,-65);g.fill();g.stroke()});g.restore();try{const im=new Image();im.src=heroes[state.hero].image;await im.decode();g.fillStyle='#171321';g.fillRect(145,315,610,560);const r=Math.min(610/im.width,560/im.height);g.drawImage(im,450-im.width*r/2,595-im.height*r/2,im.width*r,im.height*r);}catch{toast('Не удалось загрузить изображение. Попробуй открыть обложку ещё раз.');return;}g.fillStyle='#eee3ce';g.font='bold 48px sans-serif';g.fillText(state.name||'НОВЫЙ ПАУК',450,940,800);g.font='23px sans-serif';g.fillText(`EARTH-${state.earth} / ${heroes[state.hero].name}`,450,1000,800);g.font='21px sans-serif';g.fillText(state.motto,450,1070,780);g.font='14px monospace';g.fillText('ONE TEAM. INFINITE UNIVERSES. / FAN PROJECT',450,1140);const a=document.createElement('a');a.download='spider-link-cover.png';a.href=c.toDataURL('image/png');a.click();toast('Обложка готова к сохранению')}
+async function download(){
+  const p=activeProfile(),c=document.createElement('canvas');c.width=900;c.height=1200;const g=c.getContext('2d');
+  const grad=g.createLinearGradient(0,0,900,1200);grad.addColorStop(0,p.color||'#5e2b52');grad.addColorStop(1,'#101522');g.fillStyle=grad;g.fillRect(0,0,900,1200);
+  g.strokeStyle='#eee3ce';g.lineWidth=18;g.strokeRect(9,9,882,1182);g.strokeStyle='#ff3b5040';g.lineWidth=2;
+  for(let i=0;i<40;i++){g.beginPath();g.moveTo(450,650);g.lineTo(450+1500*Math.cos(i),650+1500*Math.sin(i));g.stroke();}
+  g.textAlign='center';g.fillStyle='#eee3ce';g.font='18px sans-serif';g.fillText('SPIDER-LINK PRESENTS / ISSUE 001',450,70);g.font='bold 72px sans-serif';g.fillText('YOUR FRIENDLY',450,175,800);g.fillText('MULTIVERSE',450,255,800);
+  try{const im=new Image();im.src=p.image;await im.decode();g.fillStyle='#171321';g.fillRect(145,300,610,565);const r=Math.min(610/im.width,565/im.height);g.drawImage(im,450-im.width*r/2,582-im.height*r/2,im.width*r,im.height*r);}catch{toast('Изображение ещё не загрузилось. Попробуй ещё раз.');return;}
+  g.fillStyle='#eee3ce';g.font='bold 46px sans-serif';g.fillText(p.name||'НОВЫЙ ПАУК',450,930,800);g.font='22px sans-serif';g.fillText('EARTH-'+p.earth+' / '+(p.active?'Spider-Sona':heroes[state.hero].name),450,990,800);g.font='21px sans-serif';g.fillText(p.motto||'',450,1060,780);g.font='14px monospace';g.fillText('ONE TEAM. INFINITE UNIVERSES. / FAN PROJECT',450,1140);
+  const blob=await new Promise(resolve=>c.toBlob(resolve,'image/png'));if(!blob){toast('Не удалось собрать обложку');return;}const url=URL.createObjectURL(blob),a=document.createElement('a');a.download='spider-link-cover.png';a.href=url;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);toast('Обложка готова к сохранению');
+}
 document.addEventListener('click',e=>{
   const b=e.target.closest('button');if(!b||b.disabled)return;
   if(b.dataset.view){go(b.dataset.view);return;}
   if(b.hasAttribute('data-answer')){const answer=Number(b.dataset.answer);if(step>=questions.length||!Number.isInteger(answer)||answer<0||answer>5)return;answers[step]=answer;step++;render();return;}
   if(b.hasAttribute('data-result')){selectHero(Number(b.dataset.result));return;}
   if(b.hasAttribute('data-hero')){selectHero(Number(b.dataset.hero));return;}
+  if(b.hasAttribute('data-compare')){if($('#modal').open)$('#modal').close();window.SpiderExtras?.compareWith(Number(b.dataset.compare));return;}
   if(b.hasAttribute('data-details')){heroDetail(Number(b.dataset.details));return;}
   if(b.hasAttribute('data-favorite')){const h=heroes[Number(b.dataset.favorite)];if(!h)return;state.favorites=state.favorites.includes(h.id)?state.favorites.filter(id=>id!==h.id):[...state.favorites,h.id];save();filterCatalog();return;}
   if(b.hasAttribute('data-page')){catalogPage=Number(b.dataset.page);filterCatalog();$('#catalogSearch')?.scrollIntoView({behavior:'smooth',block:'start'});return;}
@@ -321,13 +382,510 @@ document.addEventListener('change',async e=>{
       if(copy.app!=='SPIDER-LINK'||copy.version!==1||!copy.profile||typeof copy.profile!=='object'||Array.isArray(copy.profile))throw new Error('Нужен файл копии SPIDER-LINK');
       const id=copy.profile.heroId;
       if(typeof id!=='string'||!heroes.some(h=>h.id===id))throw new Error('Героя из копии пока нет в этом каталоге');
-      state=sanitizeState(copy.profile);save();go('passport');toast('Профиль восстановлен вместе с избранным и миссиями');
+      if(copy.sona&&window.SpiderExtras?.restorePersona)window.SpiderExtras.restorePersona(copy.sona);state=sanitizeState(copy.profile);save();go('passport');toast('Профиль восстановлен вместе с избранным и миссиями');
     }catch(error){toast(error instanceof SyntaxError?'Не удалось прочитать копию профиля':error.message);}
   }
 });
 $('#modal').addEventListener('click',e=>{if(e.target===$('#modal'))$('#modal').close();});
 setInterval(()=>$('#clock').textContent=new Date().toLocaleTimeString('ru-RU',{hour:'2-digit',minute:'2-digit'}),1000);
 render();
+</script>
+  <script>(() => {
+  'use strict';
+  const storageKey = 'spider-link-sona-v1';
+  const defaults = {version:1,active:false,name:'Новый паук',earth:'199999',power:'Ловкость и паучье чутьё',motto:'Моя вселенная. Мои правила.',colors:{primary:'#ff3b50',secondary:'#17192d',accent:'#a5fbf4'},eyes:'wide',emblem:'spider',pattern:'web'};
+  const text = (value, fallback, length) => typeof value === 'string' ? value.replace(/\s+/g,' ').trim().slice(0,length) : fallback;
+  const choose = (value, allowed, fallback) => allowed.includes(value) ? value : fallback;
+  const hex = (value, fallback) => typeof value === 'string' && /^#[0-9a-f]{6}$/i.test(value) ? value.toLowerCase() : fallback;
+  function sanitizePersona(value) {
+    const item = value && typeof value === 'object' && !Array.isArray(value) ? value : {};
+    return {version:1,active:item.active===true,name:text(item.name,defaults.name,32)||defaults.name,
+      earth:text(item.earth,defaults.earth,12).replace(/[^A-Za-z0-9 -]/g,'')||defaults.earth,
+      power:text(item.power,defaults.power,80)||defaults.power,motto:text(item.motto,defaults.motto,90),
+      colors:{primary:hex(item.colors?.primary,defaults.colors.primary),secondary:hex(item.colors?.secondary,defaults.colors.secondary),accent:hex(item.colors?.accent,defaults.colors.accent)},
+      eyes:choose(item.eyes,['wide','narrow'],'wide'),emblem:choose(item.emblem,['spider','star','bolt','web'],'spider'),pattern:choose(item.pattern,['web','stripes','dots'],'web')};
+  }
+  let current;
+  try { current=sanitizePersona(JSON.parse(localStorage.getItem(storageKey)||'null')); } catch { current=sanitizePersona(null); }
+  let draft=sanitizePersona(current);
+  let comparison=[Number.isInteger(state.hero)?state.hero:0,heroes.length>1?1:0];
+  const comparisonQueries=['',''];
+  function persona() { return sanitizePersona(current); }
+  function announce() { document.dispatchEvent(new CustomEvent('spider-sona-changed',{detail:persona()})); }
+  function restorePersona(value) {
+    current=sanitizePersona(value);draft=sanitizePersona(current);
+    try {localStorage.setItem(storageKey,JSON.stringify(current));} catch {toast('Не удалось сохранить SpiderSona в этом браузере.');}
+    announce();return persona();
+  }
+  function deactivatePersona() {
+    const pending=sanitizePersona(draft), saved=restorePersona({...current,active:false});
+    draft=sanitizePersona({...pending,active:false});return saved;
+  }
+  function svgFor(value) {
+    const p=sanitizePersona(value),{primary,secondary,accent}=p.colors;
+    const mask='M250 65 C143 65 99 140 115 252 C125 343 177 408 250 431 C323 408 375 343 385 252 C401 140 357 65 250 65Z';
+    const web='<path d="M250 75V425M116 236H384M151 117L348 364M350 117L151 364M116 303L374 168M126 167L374 303"/><ellipse cx="250" cy="244" rx="55" ry="74"/><ellipse cx="250" cy="244" rx="102" ry="137"/><ellipse cx="250" cy="244" rx="151" ry="191"/>';
+    const stripes=Array.from({length:9},(_,i)=>`<path d="M${-100+i*70} 60L${200+i*70} 450"/>`).join('');
+    const dots=Array.from({length:9},(_,y)=>Array.from({length:8},(_,x)=>`<circle cx="${90+x*47+(y%2)*22}" cy="${70+y*44}" r="4" fill="${accent}" stroke="none"/>`).join('')).join('');
+    const eyes=p.eyes==='wide'?'<path d="M137 194L232 245L215 294L158 275Z"/><path d="M363 194L268 245L285 294L342 275Z"/>':'<path d="M134 221L233 250L213 271L155 255Z"/><path d="M366 221L267 250L287 271L345 255Z"/>';
+    const emblems={spider:'<ellipse cx="250" cy="507" rx="11" ry="19"/><circle cx="250" cy="483" r="8"/><path d="M242 492L218 478L212 460M258 492L282 478L288 460M240 501L212 494L197 482M260 501L288 494L303 482M240 512L213 522L205 540M260 512L287 522L295 540M242 522L228 540L228 554M258 522L272 540L272 554" fill="none" stroke-width="6"/>',star:'<path d="M250 469L262 494L290 498L270 518L275 546L250 533L225 546L230 518L210 498L238 494Z"/>',bolt:'<path d="M253 466L222 511H245L237 551L280 496H254L269 466Z"/>',web:'<g fill="none"><circle cx="250" cy="508" r="33"/><circle cx="250" cy="508" r="17"/><path d="M250 475V541M217 508H283M227 485L273 531M227 531L273 485"/></g>'};
+    const pattern=p.pattern==='web'?web:p.pattern==='stripes'?stripes:dots;
+    const svg=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 620"><defs><clipPath id="face"><path d="${mask}"/></clipPath><pattern id="back" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="3" cy="3" r="1.2" fill="${accent}" opacity=".16"/></pattern></defs><rect width="500" height="620" fill="${secondary}"/><rect width="500" height="620" fill="url(#back)"/><circle cx="250" cy="260" r="207" fill="none" stroke="${accent}" opacity=".28" stroke-width="2"/><circle cx="250" cy="260" r="222" fill="none" stroke="${primary}" opacity=".4" stroke-dasharray="5 11"/><path d="M35 620L80 504L178 453L200 394H300L322 453L420 504L465 620Z" fill="${primary}"/><path d="M35 620L80 504L178 453L205 493L181 620ZM465 620L420 504L322 453L295 493L319 620Z" fill="${secondary}"/><path d="${mask}" fill="${primary}" stroke="${accent}" stroke-width="5"/><g clip-path="url(#face)" fill="none" stroke="${accent}" stroke-width="${p.pattern==='stripes'?16:2}" opacity=".32">${pattern}</g><g fill="${accent}" stroke="${secondary}" stroke-width="12" stroke-linejoin="round">${eyes}</g><g fill="${accent}" stroke="${accent}" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">${emblems[p.emblem]}</g><path d="M195 394L250 431L305 394" fill="none" stroke="${secondary}" stroke-width="8"/></svg>`;
+    return 'data:image/svg+xml;charset=utf-8,'+encodeURIComponent(svg);
+  }
+  function heroForProfile(member) {
+    const personal=arguments.length===0;
+    const outer=personal?state:(member&&typeof member==='object'?member:{});
+    const profile=outer.profile&&typeof outer.profile==='object'?outer.profile:outer;
+    const custom=personal?persona():sanitizePersona(outer.persona||profile.persona);
+    if(custom.active) return {id:'spidersona',name:custom.name,displayName:profile.name||outer.displayName||custom.name,earth:custom.earth,power:custom.power,motto:custom.motto,image:svgFor(custom),color:custom.colors.primary,active:true,alias:'SpiderSona / авторский герой',persona:custom};
+    let index=heroes.findIndex(h=>h.id===(profile.heroId||outer.heroId));
+    if(index<0) index=Number.isInteger(profile.hero)&&heroes[profile.hero]?profile.hero:0;
+    const h=heroes[index];
+    return {id:h.id,name:h.name,displayName:profile.name||outer.displayName||h.name,earth:typeof profile.earth==='string'&&profile.earth?profile.earth:h.earth,power:typeof profile.power==='string'&&profile.power?profile.power:h.power,motto:typeof profile.motto==='string'?profile.motto:'',image:h.image,color:h.color||'#ff3b50',active:false,alias:h.alias,source:h.source};
+  }
+  const option=(value,label,selected)=>`<option value="${esc(value)}" ${value===selected?'selected':''}>${esc(label)}</option>`;
+  function renderSona() {
+    const p=draft;
+    return `<section class="page"><span class="eyebrow">SPIDERSONA / АВТОРСКИЙ СИГНАЛ</span><h1 style="margin-top:22px">Твоя маска.<br><span class="red">Твоя история.</span></h1><p>Создай собственного паука: выбери цвета, рисунок костюма, линзы и эмблему. Сохранённый образ появится на личной обложке и командном постере.</p><div class="sona-layout"><div class="sona-preview"><div class="sona-preview-frame"><img id="sonaPreviewImage" src="${svgFor(p)}" alt="Предпросмотр твоего авторского паука"></div><span class="eyebrow" id="sonaPreviewEarth">EARTH-${esc(p.earth)}</span><h2 id="sonaPreviewName">${esc(p.name)}</h2><p id="sonaPreviewPower">${esc(p.power)}</p><p id="sonaActiveStatus" class="sona-status">${current.active?'● АВТОРСКИЙ ГЕРОЙ АКТИВЕН':'○ СЕЙЧАС ВЫБРАН ГЕРОЙ ИЗ КАТАЛОГА'}</p></div><form id="sonaForm" class="sona-form"><label>Имя героя<input name="name" required maxlength="32" value="${esc(p.name)}"></label><label>Номер твоей вселенной<input name="earth" required maxlength="12" pattern="[A-Za-z0-9 -]+" value="${esc(p.earth)}"></label><label class="sona-wide">Способности<input name="power" required maxlength="80" value="${esc(p.power)}"></label><label class="sona-wide">Фраза героя<input name="motto" maxlength="90" value="${esc(p.motto)}"></label><fieldset class="sona-wide sona-colors"><legend>Цвета костюма</legend>${[['primary','Основной'],['secondary','Тёмный'],['accent','Акцент']].map(([id,title])=>`<label>${title}<input type="color" name="${id}" value="${p.colors[id]}"></label>`).join('')}</fieldset><label>Линзы<select name="eyes">${option('wide','Широкие',p.eyes)}${option('narrow','Узкие',p.eyes)}</select></label><label>Эмблема<select name="emblem">${[['spider','Паук'],['star','Звезда'],['bolt','Молния'],['web','Паутина']].map(([id,title])=>option(id,title,p.emblem)).join('')}</select></label><label class="sona-wide">Рисунок костюма<select name="pattern">${[['web','Паутина'],['stripes','Диагональные полосы'],['dots','Комиксные точки']].map(([id,title])=>option(id,title,p.pattern)).join('')}</select></label><div class="sona-wide sona-actions"><button class="btn" type="submit">Сохранить и надеть маску ↗</button><button class="btn secondary" type="button" data-extras-action="canonical">Вернуться к герою каталога</button><button class="link" type="button" data-view="cover">Моя обложка ↗</button></div><p class="notice sona-wide">Предпросмотр меняется сразу. Кнопка «Сохранить и надеть маску» активирует образ. Это твой авторский дизайн, а не новый персонаж комиксного каталога.</p></form></div></section>`;
+  }
+  function readSonaForm(form) {
+    const data=new FormData(form);
+    return sanitizePersona({active:current.active,name:data.get('name'),earth:data.get('earth'),power:data.get('power'),motto:data.get('motto'),eyes:data.get('eyes'),emblem:data.get('emblem'),pattern:data.get('pattern'),colors:{primary:data.get('primary'),secondary:data.get('secondary'),accent:data.get('accent')}});
+  }
+  function updateSonaPreview() {
+    const image=$('#sonaPreviewImage');if(!image)return;
+    image.src=svgFor(draft);$('#sonaPreviewName').textContent=draft.name;$('#sonaPreviewEarth').textContent='EARTH-'+draft.earth;$('#sonaPreviewPower').textContent=draft.power;
+    $('#sonaActiveStatus').textContent=current.active?'● АВТОРСКИЙ ГЕРОЙ АКТИВЕН':'○ СЕЙЧАС ВЫБРАН ГЕРОЙ ИЗ КАТАЛОГА';
+  }
+  function comparisonPanel(side) {
+    const h=heroes[comparison[side]]||heroes[0];
+    const appearance=h.firstAppearance||h.first_appearance||h.debut||'Не указано в источнике';
+    return `<img class="compare-art" src="${esc(h.image)}" alt="${esc(h.name)} — комиксный облик"><span class="hero-category">EARTH-${esc(h.earth||'?')}</span><h2>${esc(h.name)}</h2><p class="compare-alias">${esc(h.alias)}</p><dl class="compare-facts"><dt>Способности</dt><dd>${esc(h.power)}</dd><dt>Характер</dt><dd>${esc(h.trait)}</dd><dt>Первое появление</dt><dd>${esc(typeof appearance==='string'?appearance:'Не указано в источнике')}</dd></dl><a class="art-source" href="${esc(h.source)}" target="_blank" rel="noopener noreferrer">Проверить источник ↗</a>`;
+  }
+  function comparisonOptions(side) {
+    const query=comparisonQueries[side].trim().toLocaleLowerCase('ru').replaceAll('ё','е');
+    const selected=comparison[side], matches=heroes.map((h,i)=>i).filter(i=>[heroes[i].name,heroes[i].alias,heroes[i].earth].join(' ').toLocaleLowerCase('ru').replaceAll('ё','е').includes(query));
+    if(!matches.includes(selected))matches.unshift(selected);
+    return matches.map(i=>option(String(i),heroes[i].name+' / Earth-'+(heroes[i].earth||'?'),String(selected))).join('');
+  }
+  function renderCompare() {
+    return `<section class="page"><span class="eyebrow">ДВА СИГНАЛА / СРАВНЕНИЕ</span><h1 style="margin-top:22px">Две маски.<br><span class="red">Разные истории.</span></h1><p>Сравнивай комиксные образы, способности и вселенные. Здесь нет выдуманных рейтингов силы — только сведения из каталога и ссылки на источники.</p><div class="compare-grid">${[0,1].map(side=>`<section class="compare-column"><span class="eyebrow">СИГНАЛ 0${side+1}</span><label>Найти героя<input type="search" id="compareSearch${side}" value="${esc(comparisonQueries[side])}" placeholder="Имя, псевдоним или Earth…"></label><label>Герой<select id="compareSelect${side}">${comparisonOptions(side)}</select></label><div id="comparePanel${side}" class="compare-panel">${comparisonPanel(side)}</div></section>`).join('')}</div></section>`;
+  }
+  function compareWith(index) {if(!Number.isInteger(index)||!heroes[index])return;comparison=[Number.isInteger(state.hero)?state.hero:0,index];comparisonQueries[1]='';go('compare');}
+  function onView(value) {if(value==='sona')updateSonaPreview();}
+  function wrapLines(ctx,value,maxWidth,maxLines) {
+    const words=String(value||'').trim().split(/\s+/),lines=[];let line='';
+    for(const word of words){const next=line?line+' '+word:word;if(ctx.measureText(next).width<=maxWidth||!line)line=next;else{lines.push(line);line=word;}if(lines.length===maxLines)break;}
+    if(lines.length<maxLines&&line)lines.push(line);
+    return lines.slice(0,maxLines).map((item,i)=>{let fitted=item;if(ctx.measureText(fitted).width>maxWidth){while(fitted&&ctx.measureText(fitted+'…').width>maxWidth)fitted=Array.from(fitted).slice(0,-1).join('');fitted+='…';}if(i===maxLines-1&&words.join(' ').length>lines.slice(0,maxLines).join(' ').length&&!fitted.endsWith('…')){while(fitted&&ctx.measureText(fitted+'…').width>maxWidth)fitted=Array.from(fitted).slice(0,-1).join('');fitted+='…';}return fitted;});
+  }
+  function loadArt(src) {return new Promise((resolve,reject)=>{const image=new Image();let settled=false;const timer=setTimeout(()=>finish(new Error('Тайм-аут изображения')),15000);function finish(error){if(settled)return;settled=true;clearTimeout(timer);if(error)reject(error);else resolve(image);}image.onload=()=>finish();image.onerror=()=>finish(new Error('Ошибка изображения'));image.src=src;if(image.complete&&image.naturalWidth)finish();});}
+  async function downloadTeamPoster(members,teamName) {
+    try {
+      if(!Array.isArray(members)||members.length<1||members.length>32)throw new Error('Для постера нужны от 1 до 32 участников.');
+      if(members.some(member=>!member||typeof member!=='object'||Array.isArray(member)))throw new Error('В списке команды есть некорректный участник.');
+      const profiles=members.map(member=>heroForProfile(member));
+      const images=await Promise.all(profiles.map(async(profile,index)=>{try{return await loadArt(profile.image);}catch{throw new Error('Не удалось загрузить образ: '+(members[index].displayName||members[index].name||profile.displayName||profile.name)+'. Постер не сохранён.');}}));
+      const width=1200,columns=Math.min(4,members.length),gap=22,margin=56,cardWidth=(width-margin*2-gap*(columns-1))/columns,artHeight=Math.min(380,Math.round(cardWidth*1.25)),cardHeight=artHeight+146,rows=Math.ceil(members.length/columns),height=244+rows*(cardHeight+gap)+80;
+      const canvas=document.createElement('canvas');canvas.width=width;canvas.height=height;const ctx=canvas.getContext('2d');if(!ctx)throw new Error('Браузер не поддерживает создание постера.');
+      ctx.fillStyle='#101016';ctx.fillRect(0,0,width,height);ctx.strokeStyle='#ff3b5022';ctx.lineWidth=1;for(let x=-height;x<width;x+=44){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x+height,height);ctx.stroke();}
+      ctx.fillStyle='#a5fbf4';ctx.font='18px monospace';ctx.fillText('SPIDER-LINK / КОМАНДНАЯ ОБЛОЖКА',margin,58);ctx.fillStyle='#f5f3ee';ctx.font='bold 54px Arial';wrapLines(ctx,text(teamName,'НАШ ПАУКОВЕРС',48)||'НАШ ПАУКОВЕРС',width-margin*2,2).forEach((line,i)=>ctx.fillText(line,margin,126+i*58));
+      ctx.fillStyle='#ff3b50';ctx.fillRect(margin,209,width-margin*2,5);
+      members.forEach((member,i)=>{const profile=profiles[i],image=images[i],x=margin+(i%columns)*(cardWidth+gap),y=244+Math.floor(i/columns)*(cardHeight+gap);ctx.fillStyle='#1b1b25';ctx.fillRect(x,y,cardWidth,cardHeight);ctx.fillStyle=profile.color;ctx.fillRect(x,y,cardWidth,5);ctx.fillStyle='#12121a';ctx.fillRect(x+12,y+17,cardWidth-24,artHeight);const ratio=Math.min((cardWidth-32)/image.naturalWidth,(artHeight-16)/image.naturalHeight);ctx.drawImage(image,x+cardWidth/2-image.naturalWidth*ratio/2,y+17+artHeight/2-image.naturalHeight*ratio/2,image.naturalWidth*ratio,image.naturalHeight*ratio);ctx.fillStyle='#f5f3ee';ctx.font='bold 24px Arial';const label=text(member.displayName||member.name||member.profile?.name||profile.displayName||profile.name,profile.name,48);wrapLines(ctx,label,cardWidth-28,2).forEach((line,j)=>ctx.fillText(line,x+14,y+artHeight+49+j*28));ctx.fillStyle='#a5fbf4';ctx.font='14px monospace';wrapLines(ctx,'EARTH-'+(profile.earth||'?'),cardWidth-28,1).forEach(line=>ctx.fillText(line,x+14,y+artHeight+117));});
+      ctx.fillStyle='#9292a2';ctx.font='16px monospace';ctx.fillText('ОДНА КОМАНДА. БЕСКОНЕЧНО ВСЕЛЕННЫХ. / FAN PROJECT',margin,height-34);
+      const blob=await new Promise(resolve=>canvas.toBlob(resolve,'image/png'));if(!blob)throw new Error('Не удалось собрать PNG-постер.');const url=URL.createObjectURL(blob),link=document.createElement('a');link.href=url;link.download='spider-link-team-poster.png';link.click();setTimeout(()=>URL.revokeObjectURL(url),1500);toast('Командный постер готов');return true;
+    }catch(error){toast(error.message||'Не удалось создать командный постер.');return false;}
+  }
+  document.addEventListener('input',event=>{
+    const target=event.target,form=target.closest?.('#sonaForm');if(form){draft=readSonaForm(form);updateSonaPreview();}
+    const match=target.id?.match(/^compareSearch([01])$/);if(match){const side=Number(match[1]);comparisonQueries[side]=target.value;$('#compareSelect'+side).innerHTML=comparisonOptions(side);}
+  });
+  document.addEventListener('change',event=>{
+    const target=event.target,form=target.closest?.('#sonaForm');if(form){draft=readSonaForm(form);updateSonaPreview();}
+    const match=target.id?.match(/^compareSelect([01])$/);if(match){const side=Number(match[1]),index=Number(target.value);if(Number.isInteger(index)&&heroes[index]){comparison[side]=index;$('#comparePanel'+side).innerHTML=comparisonPanel(side);}}
+  });
+  document.addEventListener('submit',event=>{if(event.target.id!=='sonaForm')return;event.preventDefault();draft=readSonaForm(event.target);restorePersona({...draft,active:true});updateSonaPreview();toast('SpiderSona сохранён и активирован. Открой свою обложку!');});
+  document.addEventListener('click',event=>{const button=event.target.closest?.('[data-extras-action]');if(button?.dataset.extrasAction==='canonical'){deactivatePersona();updateSonaPreview();toast('Выбран герой из каталога. Авторский дизайн сохранён.');}});
+  window.addEventListener('storage',event=>{if(event.key!==storageKey)return;try{current=sanitizePersona(JSON.parse(event.newValue||'null'));draft=sanitizePersona(current);updateSonaPreview();}catch{}});
+  window.SpiderExtras={renderSona,renderCompare,onView,compareWith,downloadTeamPoster,heroForProfile,persona,sanitizePersona,restorePersona,deactivatePersona,svgFor};
+})();
+</script>
+  <script>(() => {
+  if (window.SpiderTeam) return;
+  const storageKey = 'spider-link-team-v1';
+  let membership = null, room = null, error = '', busy = false, dirty = false;
+  let pollTimer = null, polling = false, active = false, inviteDraft = '', updated = '';
+  const photoUrls = new Map(), photoRequests = new Map(), uploads = new Map();
+  try {
+    const saved = JSON.parse(localStorage.getItem(storageKey) || 'null');
+    if (saved && ['roomId', 'memberId', 'token'].every(k => typeof saved[k] === 'string' && saved[k])) membership = saved;
+  } catch {}
+
+  const html = value => esc(value);
+  const root = () => document.getElementById('teamRoot');
+  const owner = () => !!room && membership?.memberId === room.ownerId;
+  const memberName = id => room?.members.find(m => m.id === id)?.name || 'Участник';
+  const supported = () => /^https?:$/.test(location.protocol);
+  const date = value => {
+    const d = new Date(value);
+    return value && !Number.isNaN(d.valueOf()) ? d.toLocaleString('ru-RU', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' }) : 'Время не указано';
+  };
+  function heroFor(member) {
+    try { if (window.SpiderExtras?.heroForProfile) return window.SpiderExtras.heroForProfile(member); } catch {}
+    return heroes.find(h => h.id === member?.heroId) || heroes[0];
+  }
+  function art(member, className = '') {
+    const h = heroFor(member);
+    return `<img class="team-art ${html(className)}" src="${html(h.image)}" alt="${html(h.name)}" loading="lazy">`;
+  }
+  function profile(name) {
+    const hero = heroes[state.hero] || heroes[0];
+    const configured = window.SpiderExtras?.persona?.() || state.persona;
+    const persona = configured && typeof configured === 'object' ? JSON.parse(JSON.stringify(configured)) : {};
+    const custom = persona?.active;
+    return {
+      name: String(name || (custom ? persona.name : state.name) || state.name || hero.name).trim().slice(0, 40),
+      heroId: hero.id,
+      earth: String((custom ? persona.earth : state.earth) || state.earth || hero.earth),
+      power: String((custom ? persona.power : state.power) || state.power || hero.power).slice(0, 160),
+      motto: String((custom ? persona.motto : state.motto) || state.motto || '').slice(0, 180),
+      persona
+    };
+  }
+  function persist(next) {
+    membership = next;
+    try {
+      if (next) localStorage.setItem(storageKey, JSON.stringify({ roomId: next.roomId, memberId: next.memberId, token: next.token }));
+      else localStorage.removeItem(storageKey);
+    } catch {
+      if (next) toast('Браузер не разрешил сохранить ключ штаба. Подключение работает до закрытия страницы.');
+    }
+  }
+  function clearPhotos() {
+    photoUrls.forEach(url => URL.revokeObjectURL(url));
+    photoUrls.clear(); photoRequests.clear(); uploads.clear();
+  }
+  function status(message, failed = false) {
+    const target = document.getElementById('team-status');
+    if (target) { target.textContent = message; target.classList.toggle('team-error', failed); }
+    const refresh = document.querySelector('[data-team-action="refresh"]');
+    if (refresh) refresh.textContent = dirty ? 'Показать обновления ↻' : 'Обновить ↻';
+  }
+  function hasDraft() {
+    const focused = document.activeElement;
+    return dirty || !!focused?.closest('#teamRoot input, #teamRoot textarea, #teamRoot select') || !!document.querySelector('#modal[open] form[id^="team-"]');
+  }
+  function refresh(force = false) {
+    const target = root();
+    if (!target) return;
+    if (!force && hasDraft()) { status('Есть обновления команды. Твой черновик сохранён на экране.'); return; }
+    if (force) dirty = false;
+    const scroll = window.scrollY;
+    target.outerHTML = render();
+    hydratePhotos();
+    window.scrollTo({ top: scroll, behavior: 'instant' });
+  }
+  function applyRoom(next, force = false) {
+    if (!next || !Array.isArray(next.members)) throw new Error('Сервер вернул неполные данные штаба.');
+    const changed = !room || room.version !== next.version;
+    room = next; error = ''; updated = new Date().toLocaleTimeString('ru-RU', { hour: '2-digit', minute: '2-digit' });
+    if (force || changed) refresh(force);
+    else status(`Сигнал стабилен · обновлено ${updated}`);
+  }
+  async function api(path, options = {}) {
+    if (!supported()) throw new Error('Общий штаб работает на сервере сайта. Открой сайт по его адресу, чтобы подключиться к друзьям.');
+    const headers = { ...options.headers };
+    if (membership?.token) headers.Authorization = `Bearer ${membership.token}`;
+    if (options.body && typeof options.body === 'string') headers['Content-Type'] = 'application/json';
+    let response;
+    try { response = await fetch(path, { ...options, headers, cache: 'no-store', signal: AbortSignal.timeout(25000) }); }
+    catch { throw new Error('Связь со штабом прервалась. Проверь интернет и попробуй ещё раз.'); }
+    if (options.binary && response.ok) return response.blob();
+    let result;
+    try { result = await response.json(); }
+    catch { throw new Error('Сервер команд по этому адресу не подключён. Открой полную серверную версию сайта.'); }
+    if (!response.ok) throw new Error(typeof result.error === 'string' ? result.error : 'Не удалось выполнить действие. Попробуй ещё раз.');
+    return result;
+  }
+  const roomPath = suffix => `/api/rooms/${encodeURIComponent(membership.roomId)}${suffix || ''}`;
+  async function pull(force = false) {
+    if (!membership || polling || !supported()) return;
+    polling = true;
+    try { const result = await api(roomPath()); applyRoom(result.room, force); }
+    catch (e) { error = e.message; status(error, true); if (!room) refresh(false); }
+    finally { polling = false; }
+  }
+  async function perform(task) {
+    if (busy) return;
+    busy = true; status('Передаём сигнал…');
+    const buttons = [...document.querySelectorAll('#teamRoot button, #modal form[id^="team-"] button')];
+    const disabled = buttons.map(button => button.disabled);
+    buttons.forEach(button => button.disabled = true);
+    try { await task(); error = ''; }
+    catch (e) { error = e.message || 'Не удалось выполнить действие.'; status(error, true); toast(error); }
+    finally { busy = false; buttons.forEach((button, i) => { if (button.isConnected) button.disabled = disabled[i]; }); }
+  }
+  async function action(payload) {
+    const result = await api(roomPath('/actions'), { method: 'POST', body: JSON.stringify(payload) });
+    if (result.room) applyRoom(result.room, true);
+    else await pull(true);
+  }
+  function normalizeCode(value) {
+    let code = String(value || '').trim();
+    if (code.includes('#join=')) code = code.split('#join=')[1].split('&')[0];
+    try { code = decodeURIComponent(code); } catch {}
+    return code.trim();
+  }
+  function inviteUrl() { return room ? `${location.origin}/#join=${encodeURIComponent(room.inviteCode)}` : ''; }
+  async function copyInvite() {
+    const link = inviteUrl();
+    try { await navigator.clipboard.writeText(link); toast('Приглашение скопировано. Отправь ссылку друзьям.'); }
+    catch {
+      modal(`<span class="eyebrow">ПРИГЛАШЕНИЕ В ШТАБ</span><h2>${html(room.name)}</h2><label>Скопируй ссылку<input readonly value="${html(link)}" id="team-copy-link"></label><p class="notice">Ссылка даёт доступ к команде. Делись ею с друзьями.</p>`);
+      const input = document.getElementById('team-copy-link'); input?.select();
+    }
+  }
+  function invitePanel() {
+    return `<div class="team-invite"><div><span class="eyebrow">ПОРТАЛ ДЛЯ ДРУЗЕЙ</span><p>Код команды: <strong>${html(room.inviteCode)}</strong></p></div><button class="btn secondary" data-team-action="invite">Скопировать приглашение ↗</button></div>`;
+  }
+  function incomingInvite() {
+    if (!inviteDraft || !membership) return '';
+    return `<form id="team-join" class="team-panel team-form team-incoming"><span class="eyebrow">НОВОЕ ПРИГЛАШЕНИЕ</span><h2>Перейти в другой штаб</h2><p class="team-help">У тебя уже есть подключение. По этому приглашению можно переключиться на команду друзей.</p><label>Код приглашения<input name="inviteCode" required maxlength="500" value="${html(inviteDraft)}"></label><label>Твой позывной<input name="memberName" required maxlength="40" value="${html(profile().name)}"></label><button class="btn">Подключиться по приглашению →</button><button type="button" class="link" data-team-action="dismiss-invite">Остаться в текущем штабе</button></form>`;
+  }
+  function welcome() {
+    const p = profile();
+    return `<div class="team-welcome"><div class="team-signal-art">${art(p)}<span>ТВОЙ СИГНАЛ / EARTH-${html(p.earth)}</span></div><div><h2>Один портал.<br>Вся ваша команда.</h2><p>Создай общий штаб или подключись по приглашению. Миссии, сборы и хроники будут доступны друзьям с разных устройств.</p><p class="notice">В команду передаётся выбранный паспорт. Его можно обновить после подключения.</p></div></div>
+      ${!supported() ? '<p class="team-alert">Этот переносимый HTML работает в личном режиме. Общий штаб доступен в серверной версии сайта по её адресу.</p>' : ''}
+      <div class="team-columns"><form id="team-create" class="team-panel team-form"><span class="eyebrow">НОВЫЙ ШТАБ</span><h2>Собрать свой Пауковерс</h2><label>Название команды<input name="roomName" required maxlength="80" placeholder="Ночной дозор мультивселенной"></label><label>Твой позывной<input name="memberName" required maxlength="40" value="${html(p.name)}"></label><button class="btn" ${!supported() ? 'disabled' : ''}>Открыть портал →</button></form>
+      <form id="team-join" class="team-panel team-form"><span class="eyebrow">ПРИГЛАШЕНИЕ ПОЛУЧЕНО</span><h2>Подключиться к друзьям</h2><label>Код или ссылка-приглашение<input name="inviteCode" required maxlength="500" value="${html(inviteDraft)}" placeholder="Вставь код или ссылку" autocomplete="off"></label><label>Твой позывной<input name="memberName" required maxlength="40" value="${html(p.name)}"></label><button class="btn secondary" ${!supported() ? 'disabled' : ''}>Принять сигнал →</button></form></div>`;
+  }
+  function layout() {
+    return room.members.map((member, i, list) => {
+      if (list.length === 1) return { member, x: 50, y: 48 };
+      const angle = -Math.PI / 2 + Math.PI * 2 * i / list.length;
+      return { member, x: 50 + 36 * Math.cos(angle), y: 49 + 35 * Math.sin(angle) };
+    });
+  }
+  function map() {
+    const nodes = layout(), byId = new Map(nodes.map(node => [node.member.id, node]));
+    const edges = new Map();
+    room.missions.filter(m => m.status === 'done').forEach(mission => {
+      const participants = [...new Set(mission.participants || [])].filter(id => byId.has(id));
+      participants.forEach((a, i) => participants.slice(i + 1).forEach(b => {
+        const key = [a, b].sort().join('|'); edges.set(key, (edges.get(key) || 0) + 1);
+      }));
+    });
+    const lines = [...edges].map(([key, count]) => {
+      const [a, b] = key.split('|').map(id => byId.get(id));
+      return `<line x1="${a.x}" y1="${a.y}" x2="${b.x}" y2="${b.y}" stroke-width="${Math.min(.2 + count * .12, 1)}"><title>${html(a.member.name)} + ${html(b.member.name)}: ${count} совместных миссий</title></line>`;
+    }).join('');
+    return `<section class="team-panel"><div class="section-title"><h2>Карта вашей мультивселенной</h2><span class="eyebrow">${room.members.length} СИГНАЛОВ</span></div><div class="team-map" style="--team-map-height:${room.members.length > 12 ? '680px' : '500px'}"><svg class="team-lines" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">${lines}</svg>${nodes.map(({ member, x, y }) => `<button class="team-map-node ${member.id === membership.memberId ? 'team-self' : ''}" style="left:${x}%;top:${y}%" data-team-member="${html(member.id)}" aria-label="Открыть паспорт и историю: ${html(member.name)}">${art(member)}<strong>${html(member.name)}</strong><small>EARTH-${html(member.earth)}</small></button>`).join('')}</div><p class="team-help">Нажми на героя, чтобы открыть паспорт и общие приключения. Линии появляются после совместных завершённых миссий.</p></section>`;
+  }
+  function rallies() {
+    const responses = [['in', 'В деле'], ['later', 'Буду позже'], ['out', 'Сегодня без меня']];
+    const list = [...room.rallies].sort((a, b) => String(b.createdAt).localeCompare(String(a.createdAt)));
+    return `<section class="team-panel"><div class="section-title"><h2>Паучий сбор</h2><button class="link" data-team-action="rally-new">Объявить сбор +</button></div>${list.length ? list.slice(0, 8).map(rally => `<article class="team-rally"><span class="eyebrow">${html(date(rally.when))}</span><h3>${html(rally.title)}</h3><p>${html(rally.description)}</p><div class="team-rsvp">${responses.map(([value, label]) => `<button data-team-rally="${html(rally.id)}" data-team-response="${value}" aria-pressed="${rally.responses?.[membership.memberId] === value}">${label} <b>${Object.values(rally.responses || {}).filter(response => response === value).length}</b></button>`).join('')}</div><details><summary>Ответы участников</summary><ul>${room.members.map(member => `<li>${html(member.name)} — ${html(responses.find(([value]) => value === rally.responses?.[member.id])?.[1] || 'пока не ответил(а)')}</li>`).join('')}</ul></details></article>`).join('') : '<p class="empty">Назначьте встречу, киновечер или вылазку. Каждый участник сможет ответить на сбор.</p>'}</section>`;
+  }
+  function missions() {
+    const activeMissions = room.missions.filter(mission => mission.status !== 'done');
+    return `<section class="team-panel"><div class="section-title"><h2>Миссии команды</h2><button class="link" data-team-action="mission-new">Новая миссия +</button></div><div class="team-missions">${activeMissions.length ? activeMissions.map(mission => {
+      const joined = mission.participants.includes(membership.memberId);
+      return `<article class="team-mission"><span class="eyebrow">${joined ? 'ТЫ В КОМАНДЕ МИССИИ' : 'НАБОР УЧАСТНИКОВ'}</span><h3>${html(mission.title)}</h3><p>${html(mission.description)}</p><p class="team-help">Участники: ${html(mission.participants.map(memberName).join(', ') || 'пока никого')}</p><div class="team-actions"><button class="btn secondary" data-team-mission-join="${html(mission.id)}" data-team-joined="${!joined}">${joined ? 'Отказаться от участия' : 'Я участвую →'}</button><button class="link" data-team-mission-complete="${html(mission.id)}" ${!joined ? 'disabled title="Сначала присоединись к миссии"' : ''}>Добавить итоги ↗</button></div></article>`;
+    }).join('') : '<p class="empty">Придумайте первую миссию. Завершённые задания станут выпусками вашей общей истории.</p>'}</div></section>`;
+  }
+  function photo(photo, className = '') {
+    return `<figure class="team-photo ${html(className)}"><img data-team-photo="${html(photo.id)}" alt="${html(photo.caption || 'Момент командной миссии')}" loading="lazy"><figcaption>${html(photo.caption || '')}</figcaption></figure>`;
+  }
+  function chronicles() {
+    const issues = room.missions.filter(m => m.status === 'done').sort((a, b) => String(a.completedAt).localeCompare(String(b.completedAt)));
+    return `<section class="team-panel"><div class="section-title"><h2>Хроники вашей команды</h2><span class="eyebrow">${issues.length} ВЫПУСКОВ</span></div><div class="team-issues">${issues.length ? issues.map((mission, i) => ({ mission, number: i + 1 })).reverse().map(({ mission, number }) => `<article class="team-issue"><span class="team-issue-number">ISSUE ${String(number).padStart(3, '0')}</span><div class="team-issue-art">${mission.report?.photos?.[0] ? photo(mission.report.photos[0]) : art(room.members.find(m => m.id === mission.participants[0]) || room.members[0])}</div><div class="team-issue-copy"><small>${html(date(mission.completedAt))}</small><h3>${html(mission.report?.title || mission.title)}</h3><p>${html((mission.report?.text || '').slice(0, 170))}${(mission.report?.text?.length || 0) > 170 ? '…' : ''}</p><button class="link" data-team-issue="${html(mission.id)}">Открыть выпуск ↗</button></div></article>`).join('') : '<p class="empty">После первой завершённой миссии здесь появится первый выпуск: название, участники, история и фотографии.</p>'}</div></section>`;
+  }
+  function render() {
+    const heading = room?.name || 'Ваш общий Пауковерс';
+    return `<section class="page team-page" id="teamRoot"><span class="eyebrow">SPIDER-LINK / КОМАНДНЫЙ КАНАЛ</span><div class="team-title"><h1>${html(heading)}</h1>${membership ? '<button class="link" data-team-action="refresh">Обновить ↻</button>' : ''}</div><p id="team-status" class="team-status ${error ? 'team-error' : ''}" role="status" aria-live="polite">${html(error || (room ? `Сигнал стабилен${updated ? ' · обновлено ' + updated : ''}` : membership ? 'Подключаемся к штабу…' : 'Выбери: создать команду или войти по приглашению.'))}</p>${incomingInvite()}${membership && !room ? `<div class="empty">${html(error || 'Загружаем участников и миссии команды.')}<div class="team-actions"><button class="btn secondary" data-team-action="refresh">Попробовать ещё раз</button><button class="link" data-team-action="disconnect">Отключить это устройство</button></div></div>` : !room ? welcome() : `<div class="team-topbar"><p>Ваши профили, встречи и миссии доступны всей команде.</p><div class="team-actions"><button class="btn" data-team-action="poster">Обложка команды ↓</button><button class="btn secondary" data-team-action="profile">Передать мой паспорт ↗</button></div></div>${invitePanel()}${map()}<div class="team-columns">${rallies()}${missions()}</div>${chronicles()}<div class="team-settings"><h2>Настройки подключения</h2>${owner() ? '<div class="team-actions"><button class="link" data-team-action="rename">Переименовать штаб</button><button class="link" data-team-action="rotate">Обновить приглашение</button></div><p class="team-help">После обновления приглашения старая ссылка перестанет работать. Подключённые участники сохранят доступ.</p>' : ''}<button class="link" data-team-action="disconnect">Отключить этот браузер от штаба</button><p class="team-help">Это удалит ключ доступа с этого устройства. Паспорт и история команды останутся на сервере.</p></div>`}</section>`;
+  }
+  function openRally() {
+    modal(`<span class="eyebrow">ПАУЧИЙ ПОЗЫВ</span><h2>Объявить сбор</h2><form id="team-rally" class="team-form"><label>Название<input name="title" required maxlength="100" placeholder="Киновечер в штабе"></label><label>Дата и время встречи<input name="when" type="datetime-local" required></label><label>Место и детали<textarea name="description" required maxlength="1000" placeholder="Где встречаемся и что берём с собой"></textarea></label><button class="btn">Отправить сигнал команде →</button></form>`);
+  }
+  function openMission() {
+    modal(`<span class="eyebrow">ДОСКА ОБЩИХ ЗАДАНИЙ</span><h2>Новая миссия</h2><form id="team-mission" class="team-form"><label>Название<input name="title" required maxlength="100" placeholder="Найти новую точку на карте"></label><label>Что предстоит сделать<textarea name="description" required maxlength="1600" placeholder="Опиши задание для вашей компании"></textarea></label><button class="btn">Добавить миссию →</button></form>`);
+  }
+  function openReport(id) {
+    const mission = room.missions.find(m => m.id === id);
+    if (!mission) return;
+    modal(`<span class="eyebrow">СЛЕДУЮЩИЙ ВЫПУСК КОМИКСА</span><h2>${html(mission.title)}</h2><form id="team-report" data-mission-id="${html(id)}" class="team-form"><label>Название выпуска<input name="title" required maxlength="100" value="${html(mission.title)}"></label><label>Как всё прошло<textarea name="text" required maxlength="4000" placeholder="Сохрани лучший момент вашей миссии"></textarea></label><label>До трёх фотографий<input id="team-report-files" name="photos" type="file" accept="image/jpeg,image/png,image/webp" multiple></label><p class="team-help">Снимки будут уменьшены перед отправкой и доступны участникам штаба.</p><div id="team-report-previews"></div><button class="btn">Завершить миссию и выпустить комикс ↗</button></form>`);
+  }
+  function openIssue(id) {
+    const mission = room.missions.find(m => m.id === id);
+    if (!mission) return;
+    modal(`<div class="team-issue-detail"><span class="eyebrow">ХРОНИКИ / ${html(date(mission.completedAt))}</span><h2>${html(mission.report?.title || mission.title)}</h2><p class="team-help">Герои выпуска: ${html(mission.participants.map(memberName).join(', '))}</p><p class="team-report-text">${html(mission.report?.text || '')}</p>${(mission.report?.photos || []).map(item => photo(item)).join('')}</div>`);
+    hydratePhotos();
+  }
+  function openMember(id) {
+    const member = room.members.find(m => m.id === id);
+    if (!member) return;
+    const history = room.missions.filter(m => m.status === 'done' && m.participants.includes(id));
+    modal(`<div class="team-member-detail">${art(member)}<span class="eyebrow">EARTH-${html(member.earth)}</span><h2>${html(member.name)}</h2><p>${html(heroFor(member).name)}</p><p>${html(member.power)}</p><blockquote>${html(member.motto || 'Любой может надеть маску.')}</blockquote><h3>Общие приключения</h3>${history.length ? history.map(m => `<button class="team-history-item" data-team-issue="${html(m.id)}"><strong>${html(m.report?.title || m.title)}</strong><small>${html(m.participants.map(memberName).join(', '))}</small></button>`).join('') : '<p class="team-help">Первая совместная миссия ещё впереди.</p>'}</div>`);
+  }
+  async function hydratePhotos() {
+    if (!membership) return;
+    const expectedRoom = membership.roomId;
+    const nodes = [...document.querySelectorAll('[data-team-photo]')];
+    for (const node of nodes) {
+      const id = node.dataset.teamPhoto, key = `${expectedRoom}/${id}`;
+      if (!id) continue;
+      if (photoUrls.has(key)) { node.src = photoUrls.get(key); continue; }
+      if (!photoRequests.has(key)) {
+        photoRequests.set(key, api(roomPath(`/photos/${encodeURIComponent(id)}`), { binary: true }).then(blob => {
+          if (membership?.roomId !== expectedRoom) return null;
+          const url = URL.createObjectURL(blob); photoUrls.set(key, url); return url;
+        }).catch(() => null).finally(() => photoRequests.delete(key)));
+      }
+      const url = await photoRequests.get(key);
+      if (url && node.isConnected) node.src = url;
+      else if (node.isConnected) node.alt = 'Снимок пока недоступен. Обнови страницу штаба.';
+    }
+  }
+  async function compressPhoto(file) {
+    if (!['image/jpeg', 'image/png', 'image/webp'].includes(file.type)) throw new Error('Для отчёта подходят фотографии JPEG, PNG или WebP.');
+    if (file.size > 20 * 1024 * 1024) throw new Error('Один снимок не должен превышать 20 МБ.');
+    const url = URL.createObjectURL(file), image = new Image();
+    try {
+      image.src = url; await image.decode();
+      let scale = Math.min(1, 1200 / Math.max(image.naturalWidth, image.naturalHeight));
+      for (let shrink = 0; shrink < 4; shrink++) {
+        const canvas = document.createElement('canvas');
+        canvas.width = Math.max(1, Math.round(image.naturalWidth * scale)); canvas.height = Math.max(1, Math.round(image.naturalHeight * scale));
+        const context = canvas.getContext('2d'); context.fillStyle = '#fff'; context.fillRect(0, 0, canvas.width, canvas.height); context.drawImage(image, 0, 0, canvas.width, canvas.height);
+        for (const quality of [.86, .72, .58, .44]) {
+          const blob = await new Promise(resolve => canvas.toBlob(resolve, 'image/jpeg', quality));
+          if (blob && blob.size <= 350000) return blob;
+        }
+        scale *= .72;
+      }
+      throw new Error('Не удалось уменьшить снимок. Выбери другую фотографию.');
+    } catch (e) { if (e.name === 'EncodingError') throw new Error('Не удалось прочитать фотографию. Выбери другой файл.'); throw e; }
+    finally { URL.revokeObjectURL(url); }
+  }
+  function showSelectedPhotos(input) {
+    const target = document.getElementById('team-report-previews');
+    if (!target) return;
+    const files = [...input.files];
+    if (files.length > 3) { input.value = ''; target.textContent = 'Можно добавить не больше трёх фотографий.'; toast('Выбери до трёх снимков.'); return; }
+    target.innerHTML = files.map((file, i) => `<label>${html(file.name)}<input name="caption-${i}" maxlength="160" placeholder="Подпись к снимку ${i + 1}"></label>`).join('');
+  }
+  async function submitReport(form, data) {
+    const files = [...(form.querySelector('input[type="file"]')?.files || [])];
+    if (files.length > 3) throw new Error('Добавь не больше трёх фотографий.');
+    const photos = [];
+    for (let i = 0; i < files.length; i++) {
+      status(`Отправляем снимок ${i + 1} из ${files.length}…`);
+      const file = files[i], key = `${membership.roomId}/${form.dataset.missionId}/${file.name}/${file.size}/${file.lastModified}`;
+      let id = uploads.get(key);
+      if (!id) {
+        const blob = await compressPhoto(file);
+        const result = await api(roomPath('/photos'), { method: 'POST', headers: { 'Content-Type': 'image/jpeg' }, body: blob });
+        id = result.photo?.id;
+        if (!id) throw new Error('Сервер не подтвердил сохранение снимка.');
+        uploads.set(key, id);
+      }
+      photos.push({ id, caption: String(data.get(`caption-${i}`) || '').trim() });
+    }
+    await action({ type: 'mission.complete', missionId: form.dataset.missionId, title: String(data.get('title')).trim(), text: String(data.get('text')).trim(), photos });
+    document.getElementById('modal').close(); dirty = false; toast('Новый выпуск появился в хрониках команды.');
+  }
+  function onView(next) {
+    active = next === 'team';
+    if (pollTimer) clearInterval(pollTimer);
+    pollTimer = null;
+    if (active) {
+      dirty = false; hydratePhotos();
+      if (membership) {
+        pull(); pollTimer = setInterval(() => { if (!document.hidden && !busy) pull(); }, 6000);
+      }
+    }
+  }
+  document.addEventListener('visibilitychange', () => { if (active && !document.hidden) pull(); });
+  document.addEventListener('online', () => { if (active) pull(); });
+  document.addEventListener('input', event => { if (event.target.closest('form[id^="team-"]')) dirty = true; });
+  document.addEventListener('change', event => {
+    if (event.target.closest('form[id^="team-"]')) dirty = true;
+    if (event.target.id === 'team-report-files') showSelectedPhotos(event.target);
+  });
+  document.addEventListener('click', event => {
+    const button = event.target.closest('button');
+    if (!button || button.disabled) return;
+    if (button.dataset.teamMember) { openMember(button.dataset.teamMember); return; }
+    if (button.dataset.teamIssue) { openIssue(button.dataset.teamIssue); return; }
+    if (button.dataset.teamMissionComplete) { openReport(button.dataset.teamMissionComplete); return; }
+    if (button.dataset.teamRally) { perform(() => action({ type: 'rally.respond', rallyId: button.dataset.teamRally, response: button.dataset.teamResponse })); return; }
+    if (button.dataset.teamMissionJoin) { perform(() => action({ type: 'mission.join', missionId: button.dataset.teamMissionJoin, joined: button.dataset.teamJoined === 'true' })); return; }
+    const command = button.dataset.teamAction;
+    if (!command) return;
+    if (command === 'refresh') { dirty = false; perform(() => pull(true)); }
+    if (command === 'invite') copyInvite();
+    if (command === 'rally-new') openRally();
+    if (command === 'mission-new') openMission();
+    if (command === 'dismiss-invite') { inviteDraft = ''; if (location.hash.startsWith('#join=')) history.replaceState(null, '', location.pathname + location.search); refresh(true); }
+    if (command === 'profile') perform(async () => { await action({ type: 'profile.update', member: profile() }); toast('Паспорт передан в общий штаб.'); });
+    if (command === 'disconnect') {
+      persist(null); room = null; dirty = false; error = ''; clearPhotos(); onView('team'); refresh(true); toast('Этот браузер отключён от команды.');
+    }
+    if (command === 'rename') modal(`<span class="eyebrow">НАЗВАНИЕ ВАШЕЙ ВСЕЛЕННОЙ</span><h2>Имя штаба</h2><form id="team-rename" class="team-form"><label>Название<input name="name" required maxlength="80" value="${html(room.name)}"></label><button class="btn">Сохранить →</button></form>`);
+    if (command === 'rotate') perform(async () => { await action({ type: 'room.invite.rotate' }); toast('Приглашение обновлено. Скопируй новую ссылку.'); });
+    if (command === 'poster') perform(async () => {
+      if (!window.SpiderExtras?.downloadTeamPoster) throw new Error('Обложка команды пока недоступна. Обнови страницу сайта.');
+      await window.SpiderExtras.downloadTeamPoster(posterMembers(), room.name);
+    });
+  });
+  document.addEventListener('submit', event => {
+    const form = event.target;
+    if (!form.id?.startsWith('team-')) return;
+    event.preventDefault();
+    const data = new FormData(form);
+    perform(async () => {
+      if (form.id === 'team-create' || form.id === 'team-join') {
+        const create = form.id === 'team-create';
+        const result = await api(create ? '/api/rooms' : '/api/rooms/join', { method: 'POST', body: JSON.stringify({ ...(create ? { name: String(data.get('roomName')).trim() } : { code: normalizeCode(data.get('inviteCode')) }), member: profile(data.get('memberName')) }) });
+        if (!result.membership?.token || !result.room) throw new Error('Сервер не подтвердил подключение к штабу.');
+        clearPhotos(); persist(result.membership); dirty = false; inviteDraft = ''; applyRoom(result.room, true); onView('team');
+        if (location.hash.startsWith('#join=')) history.replaceState(null, '', location.pathname + location.search);
+        toast(create ? 'Портал открыт. Пригласи друзей в команду.' : 'Новый сигнал подтверждён. Ты в штабе!');
+      }
+      if (form.id === 'team-rally') {
+        const when = new Date(String(data.get('when')));
+        if (Number.isNaN(when.valueOf())) throw new Error('Укажи дату и время сбора.');
+        await action({ type: 'rally.create', title: String(data.get('title')).trim(), description: String(data.get('description')).trim(), when: when.toISOString() });
+        document.getElementById('modal').close(); dirty = false; toast('Команда получила паучий позыв.');
+      }
+      if (form.id === 'team-mission') {
+        await action({ type: 'mission.create', title: String(data.get('title')).trim(), description: String(data.get('description')).trim() });
+        document.getElementById('modal').close(); dirty = false; toast('Миссия добавлена в общий штаб.');
+      }
+      if (form.id === 'team-report') await submitReport(form, data);
+      if (form.id === 'team-rename') {
+        await action({ type: 'room.rename', name: String(data.get('name')).trim() });
+        document.getElementById('modal').close(); dirty = false;
+      }
+    });
+  });
+  function posterMembers() {
+    return (room?.members || []).map(({ name, heroId, earth, power, motto, persona }) => ({ name, heroId, earth, power, motto, persona }));
+  }
+  function ready() {
+    if (location.hash.startsWith('#join=')) {
+      inviteDraft = normalizeCode(location.hash.slice(6));
+      queueMicrotask(() => go('team'));
+    }
+  }
+  window.SpiderTeam = { render, onView, bind: hydratePhotos, profile, snapshot: () => room, posterMembers, ready };
+  ready();
+})();
+</script>
+  <script>updateTop();
+window.SpiderExtras?.onView?.(view);
+document.addEventListener('spider-sona-changed',()=>{updateTop();if(view==='cover'||view==='passport')render();});
 </script>
 </body>
 </html>

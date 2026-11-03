@@ -1,0 +1,34 @@
+services:
+  app:
+    build: .
+    restart: unless-stopped
+    init: true
+    environment:
+      HOST: 0.0.0.0
+      PORT: 3000
+      SPIDER_LINK_DATA_DIR: /data
+      PUBLIC_URL: ${PUBLIC_URL:-http://localhost:3000}
+    volumes:
+      - spider-data:/data
+    ports:
+      - "127.0.0.1:${SPIDER_LINK_PORT:-3000}:3000"
+  https:
+    image: caddy:2-alpine
+    profiles: [https]
+    restart: unless-stopped
+    environment:
+      SPIDER_LINK_DOMAIN: ${SPIDER_LINK_DOMAIN:-localhost}
+    volumes:
+      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+    ports:
+      - "80:80"
+      - "443:443"
+      - "443:443/udp"
+    depends_on:
+      - app
+volumes:
+  spider-data:
+  caddy-data:
+  caddy-config:

@@ -4,10 +4,8 @@ import { fileURLToPath } from "node:url";
 
 const root = fileURLToPath(new URL("../", import.meta.url));
 const dist = resolve(root, "dist");
-const [html, css, source, catalogSource] = await Promise.all([
+const [html, catalogSource] = await Promise.all([
   readFile(resolve(dist, "index.html"), "utf8"),
-  readFile(resolve(dist, "style.css"), "utf8"),
-  readFile(resolve(dist, "app.js"), "utf8"),
   readFile(resolve(dist, "catalog.js"), "utf8"),
 ]);
 const assets = JSON.parse(catalogSource.replace(/^const spiderCatalog\s*=\s*/, "").replace(/;\s*$/, ""));
@@ -37,17 +35,22 @@ for (const asset of assets) {
   if (!mime) throw new Error(`Unsupported or damaged image: ${asset.image}`);
   asset.image = `data:${mime};base64,${image.toString("base64")}`;
 }
-const stylesheet = /<link\b(?=[^>]*\brel=["']stylesheet["'])(?=[^>]*\bhref=["']style\.css["'])[^>]*>/g;
-const app = /<script\b[^>]*\bsrc=["']app\.js["'][^>]*>\s*<\/script>/g;
 const catalog = /<script\b[^>]*\bsrc=["']catalog\.js["'][^>]*>\s*<\/script>/g;
-if ([...html.matchAll(stylesheet)].length !== 1 || [...html.matchAll(app)].length !== 1 || [...html.matchAll(catalog)].length !== 1) {
-  throw new Error("Expected exactly one style.css link, catalog.js and app.js script in dist/index.html.");
-}
+if ([...html.matchAll(catalog)].length !== 1) throw new Error('Expected one catalog.js script.');
 const escapeScript = value => value.replace(/<\/script/gi, "<\\/script");
-const standalone = html
-  .replace(stylesheet, () => `<style>${css.replace(/<\/style/gi, "<\\/style")}</style>`)
-  .replace(catalog, () => `<script>${escapeScript('const spiderCatalog = '+JSON.stringify(assets)+';')}</script>`)
-  .replace(app, () => `<script>${escapeScript(source)}</script>`);
+let standalone = html.replace(catalog, () => `<script>${escapeScript('const spiderCatalog = '+JSON.stringify(assets)+';')}</script>`);
+for(const name of ['style.css','team.css','extras.css']){
+  const css=await readFile(resolve(dist,name),'utf8');
+  const pattern=new RegExp('<link\\b(?=[^>]*\\brel=["\']stylesheet["\'])(?=[^>]*\\bhref=["\']'+name.replace('.','\\.')+'["\'])[^>]*>','g');
+  if([...standalone.matchAll(pattern)].length!==1)throw new Error('Expected stylesheet '+name);
+  standalone=standalone.replace(pattern,()=>`<style>${css.replace(/<\/style/gi,'<\\/style')}</style>`);
+}
+for(const name of ['app.js','extras.js','team.js','boot.js']){
+  const source=await readFile(resolve(dist,name),'utf8');
+  const pattern=new RegExp('<script\\b[^>]*\\bsrc=["\']'+name.replace('.','\\.')+'["\'][^>]*>\\s*<\\/script>','g');
+  if([...standalone.matchAll(pattern)].length!==1)throw new Error('Expected script '+name);
+  standalone=standalone.replace(pattern,()=>`<script>${escapeScript(source)}</script>`);
+}
 const output = resolve(root, "outputs/SPIDER-LINK.html");
 await mkdir(resolve(root, "outputs"), { recursive: true });
 await writeFile(output, standalone, "utf8");

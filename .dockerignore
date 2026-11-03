@@ -1,0 +1,15 @@
+.git
+.release-stage
+.spider-link
+.env
+.env.*
+node_modules
+outputs
+work
+.playwright-mcp
+.sites-runtime
+.wrangler
+.vinext
+app
+components
+vendor

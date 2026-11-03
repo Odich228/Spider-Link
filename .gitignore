@@ -8,3 +8,8 @@ node_modules/
 *.tsbuildinfo
 /work/base-catalog.json
 /work/expansion-*.json
+.spider-link/
+!.env.example
+.release-stage/
+/outputs/SPIDER-LINK-server.tar.gz
+/outputs/SPIDER-LINK-server.zip

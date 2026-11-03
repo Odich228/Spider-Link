@@ -1,0 +1,20 @@
+import { cp,mkdir,mkdtemp,readFile,writeFile } from 'node:fs/promises';
+import { resolve } from 'node:path';
+import { fileURLToPath } from 'node:url';
+import { spawnSync } from 'node:child_process';
+
+const root=fileURLToPath(new URL('../',import.meta.url));
+const staging=resolve(root,'.release-stage');await mkdir(staging,{recursive:true});
+const run=await mkdtemp(resolve(staging,'server-')),target=resolve(run,'SPIDER-LINK');await mkdir(target);
+for(const name of ['dist','server','drizzle','deploy','docs'])await cp(resolve(root,name),resolve(target,name),{recursive:true});
+await mkdir(resolve(target,'scripts'));await mkdir(resolve(target,'work'));
+for(const name of ['build-static.mjs','serve-static.mjs','package-server.mjs'])await cp(resolve(root,'scripts',name),resolve(target,'scripts',name));
+await cp(resolve(root,'work/check.cjs'),resolve(target,'work/check.cjs'));
+for(const name of ['README.md','Dockerfile','compose.yaml','.env.example','.dockerignore'])await cp(resolve(root,name),resolve(target,name));
+const pkg=JSON.parse(await readFile(resolve(root,'package.json'),'utf8'));
+await writeFile(resolve(target,'package.json'),JSON.stringify({name:'spider-link',version:'1.0.0',private:true,type:'module',engines:pkg.engines,scripts:{dev:'node server/main.mjs',start:'node server/main.mjs',build:'node scripts/build-static.mjs',test:'node work/check.cjs && node --test server/*.test.mjs'}},null,2)+'\n');
+await mkdir(resolve(root,'outputs'),{recursive:true});
+const archive=resolve(root,'outputs/SPIDER-LINK-server.tar.gz');
+const result=spawnSync('tar',['-czf',archive,'-C',run,'SPIDER-LINK'],{stdio:'inherit'});
+if(result.error)throw result.error;if(result.status!==0)throw new Error('Unable to package server');
+console.log(JSON.stringify({archive,staging:target}));
