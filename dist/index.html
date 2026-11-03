@@ -1,1 +1,46 @@
-<!doctype html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#101016"><title>SPIDER-LINK / Твоя вселенная на связи</title><link rel="stylesheet" href="style.css"></head><body><div class="scanline"></div><aside><a class="brand" href="#">✳<span>SPIDER<span class="red">—</span>LINK<small>MULTIVERSE CONNECTION SYSTEM</small></span></a><div class="sector">НАВИГАЦИЯ / 01</div><nav><button data-view="hq" class="active">⌘ <span>Общий штаб</span><i>01</i></button><button data-view="quiz">◈ <span>Кто ты из пауков?</span><i>02</i></button><button data-view="passport">▧ <span>Паспорт паука</span><i>03</i></button><button data-view="missions">⚡ <span>Миссии</span><i>04</i></button><button data-view="cover">▱ <span>Моя обложка</span><i>05</i></button></nav><div class="sidebar-bottom"><span class="signal">● СИГНАЛ СТАБИЛЕН</span><p>Любой может надеть маску.<br>Под ней — именно ты.</p><small>FAN PROJECT · НЕОФИЦИАЛЬНЫЙ ПРОЕКТ</small></div></aside><main><header><div><span class="red">●</span> ЛИЧНЫЙ ШТАБ <span class="muted">/ EARTH-<b id="topEarth">1610</b></span></div><button class="profile" data-view="passport"><span class="mini-mask">◢◣</span><span id="topName">Новый паук</span> ↗</button></header><div id="content"></div><footer><span>SPIDER-LINK © 2026</span><span>ОДНА КОМАНДА. БЕСКОНЕЧНО ВСЕЛЕННЫХ.</span><span>LOCAL SIGNAL / <span id="clock"></span></span></footer></main><dialog id="modal"><button class="close" aria-label="Закрыть">×</button><div id="modalContent"></div></dialog><div id="toast" role="status"></div><script src="app.js"></script></body></html>
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#101016">
+  <meta name="description" content="Найди своего героя в Пауковселенной: комиксный каталог, личный паспорт, миссии и собственная обложка.">
+  <title>SPIDER-LINK / Твоя вселенная на связи</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="scanline" aria-hidden="true"></div>
+  <aside>
+    <a class="brand" href="#">✳<span>SPIDER<span class="red">—</span>LINK<small>MULTIVERSE CONNECTION SYSTEM</small></span></a>
+    <div class="sector">НАВИГАЦИЯ / 01</div>
+    <nav aria-label="Разделы штаба">
+      <button data-view="hq" class="active">⌘ <span>Общий штаб</span><i>01</i></button>
+      <button data-view="catalog">◉ <span>Каталог пауков</span><i>02</i></button>
+      <button data-view="quiz">◈ <span>Кто ты из пауков?</span><i>03</i></button>
+      <button data-view="passport">▧ <span>Паспорт паука</span><i>04</i></button>
+      <button data-view="missions">⚡ <span>Миссии</span><i>05</i></button>
+      <button data-view="cover">▱ <span>Моя обложка</span><i>06</i></button>
+    </nav>
+    <div class="sidebar-bottom">
+      <span class="signal">● СИГНАЛ СТАБИЛЕН</span>
+      <p>Любой может надеть маску.<br>Под ней — именно ты.</p>
+      <small>FAN PROJECT · НЕОФИЦИАЛЬНЫЙ ПРОЕКТ</small>
+    </div>
+  </aside>
+  <main>
+    <header>
+      <div><span class="red">●</span> ЛИЧНЫЙ ШТАБ <span class="muted">/ EARTH-<b id="topEarth">1610</b></span></div>
+      <button class="profile" data-view="passport"><span class="mini-mask">◢◣</span><span id="topName">Новый паук</span> ↗</button>
+    </header>
+    <div id="content"></div>
+    <footer><span>SPIDER-LINK © 2026</span><span>ОДНА КОМАНДА. БЕСКОНЕЧНО ВСЕЛЕННЫХ.</span><span>LOCAL SIGNAL / <span id="clock"></span></span></footer>
+  </main>
+  <dialog id="modal" aria-label="Досье штаба">
+    <button class="close" aria-label="Закрыть">×</button>
+    <div id="modalContent"></div>
+  </dialog>
+  <div id="toast" role="status"></div>
+  <script src="catalog.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

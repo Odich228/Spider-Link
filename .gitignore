@@ -6,3 +6,5 @@ node_modules/
 .env*
 .dev.vars*
 *.tsbuildinfo
+/work/base-catalog.json
+/work/expansion-*.json
