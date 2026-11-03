@@ -1,0 +1,34 @@
+.sona-layout{display:grid;grid-template-columns:minmax(260px,.85fr) minmax(0,1.15fr);gap:34px;align-items:start;margin-top:30px}
+.sona-preview{position:sticky;top:24px;padding:22px;background:linear-gradient(145deg,#2d2032,#17171f);border:1px solid #59364b}
+.sona-preview-frame{border:1px solid #484052;background:#101016;margin-bottom:22px;overflow:hidden}
+.sona-preview img{display:block;width:100%;max-height:540px;aspect-ratio:500/620;object-fit:contain}
+.sona-preview h2{font:28px/1.2 'Russo One',Arial,sans-serif;margin:13px 0 10px;overflow-wrap:anywhere}
+.sona-preview p{font-size:12px;line-height:1.7;color:#bbb1c4}
+.sona-preview .sona-status{font:9px/1.7 monospace;letter-spacing:.5px;color:var(--cyan);margin:17px 0 0;border-top:1px solid var(--line);padding-top:15px}
+.sona-form{display:grid;grid-template-columns:1fr 1fr;gap:19px;padding:24px;border:1px solid var(--line);background:#19191f}
+.sona-form>label{font-size:11px;color:#b4adbf}
+.sona-wide{grid-column:1/-1}
+.sona-colors{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:15px;border:1px solid #42404e;padding:17px;margin:0}
+.sona-colors legend{font-size:11px;letter-spacing:.4px;color:var(--cyan);padding:0 7px}
+.sona-colors input[type=color]{padding:5px;width:100%;height:52px;cursor:pointer;background:#111118}
+.sona-actions{display:flex;flex-wrap:wrap;gap:13px;align-items:center}
+.sona-actions .btn{font-size:11px;line-height:1.5;justify-content:center;gap:10px}
+.sona-form .notice{margin:0!important;line-height:1.8}
+.compare-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:25px;margin-top:30px}
+.compare-column{min-width:0;padding:24px;border:1px solid var(--line);background:linear-gradient(145deg,#211d29,#17171f)}
+.compare-column:nth-child(2){border-top-color:var(--cyan)}
+.compare-column:first-child{border-top-color:var(--red)}
+.compare-column>label{margin-top:18px}
+.compare-column select{font-size:12px;min-width:0;max-width:100%}
+.compare-panel{margin-top:25px;border-top:1px solid #3b3345;padding-top:23px}
+.compare-art{display:block;width:100%;height:340px;object-fit:contain;border:1px solid #3b3345;background:radial-gradient(ellipse,#302335,#101016 75%);padding:12px;margin-bottom:18px}
+.compare-panel h2{font:27px/1.25 'Russo One',Arial,sans-serif;letter-spacing:-.5px;margin:16px 0 9px;overflow-wrap:anywhere}
+.compare-alias{color:var(--cyan);font-size:11px;line-height:1.8;margin-bottom:22px}
+.compare-facts{margin:0;display:grid;gap:0}
+.compare-facts dt{border-top:1px solid #383340;padding-top:16px;color:#ada0bb;font:9px monospace;letter-spacing:1px;text-transform:uppercase}
+.compare-facts dd{margin:8px 0 18px;color:#ddd7e5;font-size:12px;line-height:1.8}
+.compare-panel .art-source{padding:10px 0;color:var(--cyan);font-size:11px;line-height:1.8}
+@media(max-width:1100px){.sona-layout{grid-template-columns:minmax(230px,.8fr) minmax(0,1.2fr);gap:24px}.sona-form{padding:20px;gap:16px}.sona-colors{gap:10px;padding:14px}.compare-grid{gap:18px}.compare-column{padding:20px}.compare-panel h2{font-size:24px}}
+@media(max-width:900px){.sona-layout{grid-template-columns:minmax(0,1fr)}.sona-preview{position:static;display:grid;grid-template-columns:minmax(160px,.8fr) 1fr;gap:0 23px}.sona-preview-frame{grid-row:span 5;margin:0}.sona-preview h2{font-size:23px;margin-top:8px}.sona-preview> .eyebrow{align-self:end;line-height:1.8}.sona-preview .sona-status{margin-top:10px;padding-top:10px}.sona-form{grid-template-columns:1fr 1fr}.compare-grid{gap:15px}.compare-art{height:290px}.compare-column{padding:16px}.compare-panel h2{font-size:22px}}
+@media(max-width:600px){.sona-layout{margin-top:23px;gap:20px}.sona-preview{display:block;padding:18px}.sona-preview-frame{max-width:340px;margin:0 auto 20px}.sona-preview h2{font-size:25px}.sona-form{padding:18px;grid-template-columns:minmax(0,1fr);gap:17px}.sona-wide{grid-column:auto}.sona-colors{gap:10px;padding:14px}.sona-actions{align-items:stretch;gap:11px}.sona-actions .btn{width:100%}.sona-actions .link{width:100%;text-align:center}.compare-grid{grid-template-columns:minmax(0,1fr);gap:22px}.compare-column{padding:20px}.compare-art{height:310px}.compare-panel h2{font-size:25px}.compare-facts dd{font-size:12px}.compare-column select{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.sona-preview img{transition:none}}
