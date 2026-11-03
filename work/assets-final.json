@@ -1,0 +1,152 @@
+[
+  {
+    "id": "miles",
+    "url": "https://cdn.marvel.com/content/2x/329291._sx1280_ql80_ttd_.jpg",
+    "source": "https://www.marvel.com/articles/comics/the-best-costumes-in-the-spider-verse-part-1",
+    "caption": "Marvel / РєРѕРјРёРєСЃРЅС‹Р№ РєРѕСЃС‚СЋРј",
+    "file": "assets/miles.jpg"
+  },
+  {
+    "id": "gwen",
+    "url": "https://storage.googleapis.com/images.pricecharting.com/4e3bccd18a1a90ee0b191f8ba22fa306428a75ca6334fb72562cea8fa0ae3297/1600.jpg",
+    "source": "https://www.pricecharting.com/game/comic-books-spider-gwen/spider-gwen-1-2015",
+    "caption": "Spider-Gwen 2015 1 comic cover",
+    "file": "assets/gwen.jpg"
+  },
+  {
+    "id": "peter",
+    "url": "https://s3.amazonaws.com/comicgeeks/comics/covers/large-6270822.jpg",
+    "source": "https://leagueofcomicgeeks.com/character/4056/norah-winters",
+    "caption": "Amazing Spider-Man Peter Parker comic cover",
+    "file": "assets/peter.jpg"
+  },
+  {
+    "id": "hobie",
+    "url": "https://bigtimecollectibles.com/cdn/shop/products/75960620853100131.jpg?v=1703549637",
+    "caption": "SPIDER-PUNK: ARMS RACE 1 OLIVIER COIPEL VARIANT - 02/28/24",
+    "source": "https://bigtimecollectibles.com/products/75960620853100131",
+    "file": "assets/hobie.jpg"
+  },
+  {
+    "id": "miguel",
+    "url": "https://cdn.marvel.com/content/1x/sm20992019001_cov.jpg",
+    "source": "https://www.marvel.com/articles/comics/marvel-goes-back-to-the-future-this-december-with-2099-one-shot-comics",
+    "caption": "Spider-Man 2099 (2019) #1",
+    "file": "assets/miguel.jpg"
+  },
+  {
+    "id": "pavitr",
+    "url": "https://cdn.marvel.com/content/2x/edge_of_spider-verse_2022_3.jpg",
+    "source": "https://www.marvel.com/articles/comics/meet-pavitr-prabhakar-aka-spider-man-india",
+    "caption": "Edge of Spider-Verse (2022) #3",
+    "file": "assets/pavitr.jpg"
+  },
+  {
+    "id": "noir",
+    "url": "https://comicbookquest.com/cdn/shop/products/spider-man-noir1__83548.1641850681.1280.1280.jpg?v=1698319409&width=1946",
+    "caption": "Spider-Man Noir comic cover",
+    "file": "assets/noir.jpg"
+  },
+  {
+    "id": "ham",
+    "url": "https://cdn.marvel.com/u/prod/marvel/i/mg/c/30/5d123d6f9eab2/detail.jpg",
+    "caption": "Spider-Ham comic cover",
+    "source": "https://www.marvel.com/comics/issue/77275/peter_porker_the_spectacular_spider-ham_1985_16",
+    "file": "assets/ham.jpg"
+  },
+  {
+    "id": "peni",
+    "url": "https://parigibooks.cdn.bibliopolis.com/pictures/35778.jpg?auto=webp&fit=bounds&height=1000&v=1672071797&width=768",
+    "caption": "Edge of Spider-Verse (2014) #5",
+    "source": "https://www.marvel.com/comics/guides/169/spider-verse-spider-people",
+    "file": "assets/peni.jpg"
+  },
+  {
+    "id": "superior",
+    "url": "https://cdn.kanobu.ru/articles/pics/c9ed3bc2-e6ff-4539-822a-a70dd2bc789f.jpg",
+    "caption": "Superior Spider-Man — комиксная иллюстрация",
+    "source": "https://kanobu.ru/news/tajna-lichnosti-sovershennogo-cheloveka-pauka-raskryita-kto-eto-sdelal-416812/",
+    "file": "assets/superior.jpg"
+  },
+  {
+    "id": "ben",
+    "url": "https://cdn.mos.cms.futurecdn.net/uZsWceQ8MoPEcbvRMe6XJL.jpg",
+    "source": "https://www.gamesradar.com/big-eyes-knobbly-rubber-and-embarrassing-hoodies-how-spider-mans-costume-has-evolved-over-55-years/2/",
+    "caption": "Scarlet Spider — классический костюм 1994 года",
+    "file": "assets/ben.jpg"
+  },
+  {
+    "id": "kaine",
+    "url": "https://s.hdnux.com/photos/07/66/63/2059473/4/1200x0.jpg",
+    "caption": "Scarlet Spider 2012 1 Kaine cover",
+    "file": "assets/kaine.jpg"
+  },
+  {
+    "id": "mayday",
+    "url": "https://i.pinimg.com/736x/5c/f0/c8/5cf0c82288fdda2794a2c722bb575881.jpg",
+    "caption": "Spider-Girl Mayday Parker comic cover",
+    "source": "https://www.pinterest.com/pin/1st-part-of-an-amazing-spider-girl-two-parter-where-she-goes-back-in-time-and-meets-her-dad-my-fav-issue-spider-g--485192559844779994/",
+    "file": "assets/mayday.jpg"
+  },
+  {
+    "id": "uk",
+    "url": "https://cdn.marvel.com/content/2x/spider-uk.jpg",
+    "source": "https://www.marvel.com/articles/comics/spider-geddon-war-report-a-spotlight-on-the-fallen-spider-heroes",
+    "caption": "Spider-Geddon War Report: A Spotlight on the Fallen Spider-Heroes | Marvel",
+    "file": "assets/uk.jpg"
+  },
+  {
+    "id": "lady",
+    "url": "https://www.looper.com/img/gallery/who-is-across-the-spider-verses-steampunk-spider-woman-and-what-can-she-do/lady-spider-is-an-inventor-and-a-vigilante-1685649160.jpg",
+    "caption": "Lady Spider Maybelle Reilly comic",
+    "source": "https://www.looper.com/1302841/across-the-spider-verse-steampunk-spider-woman/",
+    "file": "assets/lady.jpg"
+  },
+  {
+    "id": "rex",
+    "url": "https://www.laughingplace.com/uploads/2022/08/comic-review-edge-of-spider-verse-1-is-a-wild-ride-featuring-some-crazy-spider-characters-2.jpeg",
+    "caption": "Spider Rex comic",
+    "source": "https://www.laughingplace.com/w/articles/2022/08/03/comic-review-edge-of-spider-verse-1-is-a-wild-ride-featuring-some-crazy-spider-characters/",
+    "file": "assets/rex.jpg"
+  },
+  {
+    "id": "1602",
+    "url": "https://spiderfan.org/images/title/comics/spiderman_1602/002.jpg",
+    "source": "https://spiderfan.org/title/comics/spiderman_1602.html",
+    "caption": "Spider-Man 1602 comic",
+    "file": "assets/1602.jpg"
+  },
+  {
+    "id": "manga",
+    "url": "https://cdn.shopify.com/s/files/1/0261/7085/1416/products/IMG_4328_b09d929c-c233-41a9-8d2b-77fd5e1f39b8_1024x1024.jpg?v=1667887077",
+    "source": "https://theunrealitystore.co.uk/products/marvel-mangaverse-spider-man-1-vfn-condition",
+    "caption": "Spider-Man Mangaverse comic",
+    "file": "assets/manga.jpg"
+  },
+  {
+    "id": "silk",
+    "url": "https://www.bookxcess.com/cdn/shop/products/silk-the-life-and-times-of-cindy-moon-vol-0-9780785197041-16969627730069.jpg?v=1648788493",
+    "caption": "Silk Cindy Moon comic cover",
+    "file": "assets/silk.jpg"
+  },
+  {
+    "id": "jessica",
+    "url": "https://s3.amazonaws.com/comicgeeks/comics/covers/large-7839529.jpg",
+    "source": "https://leagueofcomicgeeks.com/character/1636/jessica-drew",
+    "caption": "Spider-Woman Jessica Drew comic cover",
+    "file": "assets/jessica.jpg"
+  },
+  {
+    "id": "anya",
+    "url": "https://m.media-amazon.com/images/S/compressed.photo.goodreads.com/books/1649772190i/52723575.jpg",
+    "caption": "Spider Girl Anya Corazon comic cover",
+    "file": "assets/anya.jpg"
+  },
+  {
+    "id": "julia",
+    "url": "https://cdn.marvel.com/u/prod/marvel/i/mg/3/70/5d377291082db/background.jpg",
+    "source": "https://www.marvel.com/comics/issue/59023/spider-woman_1993_2",
+    "caption": "Spider Woman Julia Carpenter comic cover",
+    "file": "assets/julia.jpg"
+  }
+]
